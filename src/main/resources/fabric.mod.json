@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "curiter-mod",
+	"version": "${version}",
+	"name": "Curiter Mod",
+	"description": "欢迎游玩翆璃塔模组!",
+	"authors": [
+		"fafa","鹤初舞","蝶喋 LPTIR","14"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "GPL3.0",
+	"icon": "assets/curiter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.curiter.CuriterMod"
+		],
+		"client": [
+			"com.curiter.CuriterModClient"
+		],
+		"fabric-datagen": [
+			"com.curiter.CuriterModDataGenerator"
+		]
+	},
+	"mixins": [
+		"curiter.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

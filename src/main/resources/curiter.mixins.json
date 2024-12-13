@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.curiter.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"CuriterModMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
