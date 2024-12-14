@@ -1,5 +1,7 @@
 package com.curiter;
 
+import com.curiter.block.ModBlocks;
+import com.curiter.item.ModItemGroups;
 import com.curiter.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +16,7 @@ public class CuriterMod implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
+		ModItemGroups.registerModItemGroups();
+		ModBlocks.registerModBlocks();
 	}
 }

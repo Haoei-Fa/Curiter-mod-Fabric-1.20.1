@@ -1,4 +1,7 @@
 {
   "item.curiter.garuinka": "garuinka",
-  "item.curiter.disc_empty": "empty disc"
+  "item.curiter.disc_empty": "empty disc",
+  "itemGroup.curiter_group": "Curiter group",
+  "block.curiter.curiter_block": "Curiter block",
+  "itemGroup.curiter_music_disc": "Curiter music disc"
 }

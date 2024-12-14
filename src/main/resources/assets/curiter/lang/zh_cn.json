@@ -1,4 +1,7 @@
 {
   "item.curiter.garuinka": "格林卡",
-  "item.curiter.disc_empty": "空白唱片"
+  "item.curiter.disc_empty": "空白唱片",
+  "itemGroup.curiter_group": "翆璃塔模组物品",
+  "block.curiter.curiter_block": "翆璃塔方块",
+  "itemGroup.curiter_music_disc": "翆璃塔音乐唱片"
 }

@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "curiter:block/curiter_block"
+      },
+      {
+        "model": "curiter:block/curiter_block",
+        "y": 90
+      },
+      {
+        "model": "curiter:block/curiter_block",
+        "y": 180
+      },
+      {
+        "model": "curiter:block/curiter_block",
+        "y": 270
+      }
+    ]
+  }
+}

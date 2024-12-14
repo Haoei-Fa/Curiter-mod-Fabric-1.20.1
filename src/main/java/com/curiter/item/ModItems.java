@@ -1,6 +1,7 @@
 package com.curiter.item;
 
 import com.curiter.CuriterMod;
+import com.curiter.block.ModBlocks;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -21,6 +22,7 @@ public class ModItems {
     public static void registerModItems(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToItemGroupINGREDIENTS);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToItemGroupNATURAL);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(ModItems::addItemsToItemGroupOPERATOR);
     }
     public static void addItemsToItemGroupINGREDIENTS(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);
@@ -28,5 +30,8 @@ public class ModItems {
     }
     public static void addItemsToItemGroupNATURAL(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);
+    }
+    public static void addItemsToItemGroupOPERATOR(FabricItemGroupEntries fabricItemGroupEntries){
+        fabricItemGroupEntries.add(ModBlocks.CURITER_BLOCK);
     }
 }
