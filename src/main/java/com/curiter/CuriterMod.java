@@ -3,6 +3,7 @@ package com.curiter;
 import com.curiter.block.ModBlocks;
 import com.curiter.item.ModItemGroups;
 import com.curiter.item.ModItems;
+import com.curiter.sounds.ModSounds;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,6 @@ public class CuriterMod implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerModItemGroups();
 		ModBlocks.registerModBlocks();
+		ModSounds.registerSounds();
 	}
 }

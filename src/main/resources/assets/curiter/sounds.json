@@ -1,0 +1,128 @@
+{
+  "the_paradox_of_theorem_seven":{
+    "subtitle": "sounds.curiter.the_paradox_of_theorem_seven",
+    "sounds": [
+      {
+        "name": "curiter:the_paradox_of_theorem_seven",
+        "stream": false
+      }
+    ]
+  },
+  "candy_star_paradise":{
+    "subtitle": "sounds.curiter.candy_star_paradise",
+    "sounds": [
+      {
+        "name": "curiter:candy_star_paradise",
+        "stream": false
+      }
+    ]
+  },
+  "black_blood":{
+    "subtitle": "sounds.curiter.black_blood",
+    "sounds": [
+      {
+        "name": "curiter:black_blood",
+        "stream": false
+      }
+    ]
+  },
+  "ancient_castle_under_the_blood_moon":{
+    "subtitle": "sounds.curiter.ancient_castle_under_the_blood_moon",
+    "sounds": [
+      {
+        "name": "curiter:ancient_castle_under_the_blood_moon",
+        "stream": false
+      }
+    ]
+  },
+  "evanescent_star":{
+    "subtitle": "sounds.curiter.evanescent_star",
+    "sounds": [
+      {
+        "name": "curiter:evanescent_star",
+        "stream": false
+      }
+    ]
+  },
+  "crashed_star":{
+    "subtitle": "sounds.curiter.evanescent_star",
+    "sounds": [
+      {
+        "name": "curiter:crashed_star",
+        "stream": false
+      }
+    ]
+  },
+  "sleeping_atlantis":{
+    "subtitle": "sounds.curiter.sleeping_atlantis",
+    "sounds": [
+      {
+        "name": "curiter:sleeping_atlantis",
+        "stream": false
+      }
+    ]
+  },
+  "dimension_cabinet":{
+    "subtitle": "sounds.curiter.dimension_cabinet",
+    "sounds": [
+      {
+        "name": "curiter:dimension_cabinet",
+        "stream": false
+      }
+    ]
+  },
+  "the_curiter":{
+    "subtitle": "sounds.curiter.the_curiter",
+    "sounds": [
+      {
+        "name": "curiter:the_curiter",
+        "stream": false
+      }
+    ]
+  },
+  "gravitational_equilibrium":{
+    "subtitle": "sounds.curiter.gravitational_equilibrium",
+    "sounds": [
+      {
+        "name": "curiter:gravitational_equilibrium",
+        "stream": false
+      }
+    ]
+  },
+  "blood_falsehood":{
+    "subtitle": "sounds.curiter.blood_falsehood",
+    "sounds": [
+      {
+        "name": "curiter:blood_falsehood",
+        "stream": false
+      }
+    ]
+  },
+  "god_ghosts_and_dao_symbol":{
+    "subtitle": "sounds.curiter.god_ghosts_and_dao_symbol",
+    "sounds": [
+      {
+        "name": "curiter:god_ghosts_and_dao_symbol",
+        "stream": false
+      }
+    ]
+  },
+  "glitch_art":{
+    "subtitle": "sounds.curiter.glitch_art",
+    "sounds": [
+      {
+        "name": "curiter:glitch_art",
+        "stream": false
+      }
+    ]
+  },
+  "the_sukatuo":
+  {"subtitle": "sounds.curiter.the_sukatuo",
+    "sounds": [
+      {
+        "name": "curiter:the_sukatuo",
+        "stream": false
+      }
+    ]
+  }
+}
