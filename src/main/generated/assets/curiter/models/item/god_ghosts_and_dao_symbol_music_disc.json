@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "curiter:item/god_ghosts_and_dao_symbol_music_disc"
+  }
+}

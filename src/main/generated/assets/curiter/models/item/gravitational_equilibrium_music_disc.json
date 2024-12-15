@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "curiter:item/gravitational_equilibrium_music_disc"
+  }
+}

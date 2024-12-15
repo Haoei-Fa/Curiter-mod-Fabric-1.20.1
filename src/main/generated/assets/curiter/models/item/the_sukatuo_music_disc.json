@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "curiter:item/the_sukatuo_music_disc"
+  }
+}
