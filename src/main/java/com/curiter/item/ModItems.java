@@ -15,6 +15,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item GARUINKA = registerItems("garuinka",new Item(new FabricItemSettings()));
+    public static final Item GARUINKA_STORAGE_BOTTLE = registerItems("garuinka_storage_bottle",new Item(new FabricItemSettings()));
     public static final Item DISC_EMPTY = registerItems("disc_empty",new Item(new FabricItemSettings()));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",
@@ -57,6 +58,7 @@ public class ModItems {
     public static void addItemsToItemGroupINGREDIENTS(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);
         fabricItemGroupEntries.add(DISC_EMPTY);
+        fabricItemGroupEntries.add(GARUINKA_STORAGE_BOTTLE);
     }
     public static void addItemsToItemGroupNATURAL(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);

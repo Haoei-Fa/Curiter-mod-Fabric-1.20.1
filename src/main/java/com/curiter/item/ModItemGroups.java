@@ -16,6 +16,7 @@ public class ModItemGroups {
             .icon(() -> new ItemStack(ModBlocks.CURITER_BLOCK)).
             entries((displayContext, entries) -> {
                 entries.add(ModItems.DISC_EMPTY);
+                entries.add(ModItems.GARUINKA_STORAGE_BOTTLE);
                 entries.add(ModItems.GARUINKA);
                 entries.add(ModBlocks.CURITER_BLOCK);
                 entries.add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC);
