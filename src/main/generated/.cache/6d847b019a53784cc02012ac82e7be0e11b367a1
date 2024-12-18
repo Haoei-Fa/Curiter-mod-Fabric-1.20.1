@@ -1,11 +1,12 @@
-// 1.20.1	2024-12-17T23:56:07.8803185	Curiter Mod/Model Definitions
+// 1.20.1	2024-12-19T02:20:18.3072407	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 779e3a6f195e48e7618b990304b8c04cebb412fc assets\curiter\models\item\disc_empty.json
+e8a83be72e7b17491d30ca44778222b7b26be145 assets\curiter\models\item\garuinka_collectors.json
 78b433ae9b1bb5636f93b5451422337ca176f0c6 assets\curiter\models\item\evanescent_star_music_disc.json
 cdeaa5e2273b3abd7e6cba62074c95786d1961e1 assets\curiter\models\item\candy_star_paradise_music_disc.json
 e8130f0fded437beb6cf84867d320081314ed0a8 assets\curiter\models\item\god_ghosts_and_dao_symbol_music_disc.json
-1b721efc95ee9b01088828cc93351bba38fd473b assets\curiter\models\block\curiter_block.json
 1c959c94a9c3ced43d8913d9b44d65562d2b9ad7 assets\curiter\models\item\gravitational_equilibrium_music_disc.json
+1b721efc95ee9b01088828cc93351bba38fd473b assets\curiter\models\block\curiter_block.json
 20f1d2d836c38ad2521ef4ef02c86b240f5c67f9 assets\curiter\blockstates\curiter_block.json
 638d1ebcae96bcdff8d7cd0f4b5d556f52bbc91e assets\curiter\models\item\garuinka_storage_bottle.json
 20bafd87ed240dc0aa1e688676cd0df50795b154 assets\curiter\models\item\garuinka.json
