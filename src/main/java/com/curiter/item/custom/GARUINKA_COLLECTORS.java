@@ -27,8 +27,10 @@ public class GARUINKA_COLLECTORS extends Item {
             ItemStack stack = context.getStack();
             BlockState BlockState = world.getBlockState(context.getBlockPos());
             if (BlockIsRight(BlockState)){
-                ObtainGaruinka(player,context.getWorld(),context.getBlockPos());
-                context.getStack().damage(-500-Rollumber(),context.getPlayer(),PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                if (context.getStack().getDamage() != 0) {
+                    ObtainGaruinka(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-500 - Rollumber(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
             }
         }
 
@@ -38,7 +40,6 @@ public class GARUINKA_COLLECTORS extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()){
-
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
