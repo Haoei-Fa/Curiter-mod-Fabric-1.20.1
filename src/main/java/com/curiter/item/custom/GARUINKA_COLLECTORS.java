@@ -3,15 +3,21 @@ package com.curiter.item.custom;
 import com.curiter.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.entity.AreaEffectCloudEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.entity.boss.dragon.EnderDragonEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemUsageContext;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.Hand;
+import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.World;
+
+import java.util.List;
 
 public class GARUINKA_COLLECTORS extends Item {
     public GARUINKA_COLLECTORS(Settings settings) {
@@ -34,7 +40,7 @@ public class GARUINKA_COLLECTORS extends Item {
                     context.getStack().damage(-1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
             }
-
+            //对凋零玫瑰使用
             else if (BlockIsWitherRose(BlockState)){
                 if (context.getStack().getDamage() != 0) {
                     UseOnWitherRose(player, context.getWorld(), context.getBlockPos());
@@ -80,6 +86,27 @@ public class GARUINKA_COLLECTORS extends Item {
         }
 
         return super.useOnBlock(context);
+    }
+
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        List<AreaEffectCloudEntity> list = world.getEntitiesByClass(
+                AreaEffectCloudEntity.class,
+                user.getBoundingBox().expand(2.0),
+                entity -> entity != null && entity.isAlive() && entity.getOwner() instanceof EnderDragonEntity
+        );
+        if (!world.isClient()){
+                if (!list.isEmpty()) {
+                    if (user.getStackInHand(hand).getDamage() != 0){
+                        AreaEffectCloudEntity areaEffectCloudEntity = (AreaEffectCloudEntity)list.get(0);
+                        areaEffectCloudEntity.setRadius(areaEffectCloudEntity.getRadius() - 0.5F);
+                        user.getStackInHand(hand).setDamage(user.getStackInHand(hand).getDamage()-RollNumber4()-20);
+                    }
+                }
+        }
+
+        ItemStack itemStack = user.getStackInHand(hand);
+        return super.use(world, user, hand);
     }
 
     int timer = 0;
@@ -166,5 +193,7 @@ public class GARUINKA_COLLECTORS extends Item {
     private static int RollNumber3(){
         return Random.createLocal().nextInt(31);
     }
-
+    private static int RollNumber4(){
+        return Random.createLocal().nextInt(81);
+    }
 }
