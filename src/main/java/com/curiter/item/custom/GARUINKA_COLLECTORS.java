@@ -37,9 +37,18 @@ public class GARUINKA_COLLECTORS extends Item {
         return super.useOnBlock(context);
     }
 
+    int timer = 0;
+
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()){
+            timer++;
+            if (stack.getDamage() != 0){
+                if(timer >= 200){
+                    stack.setDamage(stack.getDamage()-1000);
+                    timer = 0;
+                }
+            }
         }
         super.inventoryTick(stack, world, entity, slot, selected);
     }
