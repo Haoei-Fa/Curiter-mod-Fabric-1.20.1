@@ -33,56 +33,104 @@ public class GARUINKA_COLLECTORS extends Item {
             PlayerEntity player = context.getPlayer();
             ItemStack stack = context.getStack();
             BlockState BlockState = world.getBlockState(context.getBlockPos());
-            //对草方块使用
-            if (BlockIsGrassBlock(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+            if (context.getStack().getDamage() != 0) {
+                //对草方块使用
+                if (BlockIsGrassBlock(BlockState)){
                     UseOnGrassBlock(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
-            }
-            //对凋零玫瑰使用
-            else if (BlockIsWitherRose(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对凋零玫瑰使用
+                else if (BlockIsWitherRose(BlockState)){
                     UseOnWitherRose(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
-            }
-            //对花卉使用
-            else if (BlockIsFlowers(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对花卉使用
+                else if (BlockIsFlowers(BlockState)){
                     UseOnFlowers(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+
                 }
-            }
-            //对草使用
-            else if (BlockIsGrass(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对草使用
+                else if (BlockIsGrass(BlockState)){
                     UseOnGrass(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-2, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
-            }
-            //对树苗使用
-            else if (BlockIsSaplings(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对盛开的杜鹃花丛使用
+                else if (BlockIsFloweringAzalea(BlockState)){
+                    UseOnFloweringAzalea(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对树苗使用
+                else if (BlockIsSaplings(BlockState)){
                     UseOnSaplings(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-5-RollNumber2(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
-            }
-            //对红石矿使用
-            else if (BlockIsRedStone(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对红石矿使用
+                else if (BlockIsRedStone(BlockState)){
                     UseOnRedStone(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
-            }
-            //对深层红石矿使用
-            else if (BlockIsDeepSlateRedStone(BlockState)){
-                if (context.getStack().getDamage() != 0) {
+                //对深层红石矿使用
+                else if (BlockIsDeepSlateRedStone(BlockState)){
                     UseOnDeepSlateRedStone(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
+                //对盛开的杜鹃树叶使用
+                else if (BlockIsFloweringAzaleaLeave(BlockState)){
+                    UseOnFloweringAzaleaLeave(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对树叶使用
+                else if (BlockIsLeaves(BlockState)){
+                    UseOnLeaves(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对刷怪笼使用
+                else if (BlockIsSpawner(BlockState)){
+                    UseOnSpawner(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-500-RollNumber5(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对蘑菇类方块使用
+                else if (BlockIsMushroom(BlockState)){
+                    UseOnMushroom(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对菌光体使用
+                else if (BlockIsShroomLight(BlockState)){
+                    UseOnShroomLight(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber6(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对泥土变种使用
+                else if (BlockIsDirt(BlockState)){
+                    UseOnDirt(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对其他植物使用
+                else if (BlockIsOtherPlants(BlockState)){
+                    UseOnOtherPlants(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber7(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对幽匿方块使用
+                else if (BlockIsSculkBlocks(BlockState)){
+                    UseOnSculkBlocks(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber7(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对下界岩变种使用
+                else if (BlockIsNetherRacks(BlockState)){
+                    UseOnNetherRacks(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对萤石使用
+                else if (BlockIsGlowStone(BlockState)){
+                    UseOnGlowStone(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-5-RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对紫水晶使用
+                else if (BlockIsAmethystCluster(BlockState)){
+                    UseOnAmethystCluster(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
             }
-
         }
 
         return super.useOnBlock(context);
@@ -97,6 +145,7 @@ public class GARUINKA_COLLECTORS extends Item {
         );
         if (!world.isClient()){
                 if (!list.isEmpty()) {
+                    //对龙息使用
                     if (user.getStackInHand(hand).getDamage() != 0){
                         AreaEffectCloudEntity areaEffectCloudEntity = (AreaEffectCloudEntity)list.get(0);
                         areaEffectCloudEntity.setRadius(areaEffectCloudEntity.getRadius() - 0.5F);
@@ -109,6 +158,7 @@ public class GARUINKA_COLLECTORS extends Item {
         return super.use(world, user, hand);
     }
 
+    //计时器
     int timer = 0;
 
     @Override
@@ -184,6 +234,95 @@ public class GARUINKA_COLLECTORS extends Item {
         world.setBlockState(blockPos,blockState4);
     }
 
+    private boolean BlockIsLeaves(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.LEAVES_LIST);
+    }
+    private void UseOnLeaves(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsFloweringAzalea(BlockState blockState){
+        return blockState.isOf(Blocks.FLOWERING_AZALEA);
+    }
+    private void UseOnFloweringAzalea(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState5 = Blocks.AZALEA.getDefaultState();
+        world.setBlockState(blockPos,blockState5);
+    }
+
+    private boolean BlockIsFloweringAzaleaLeave(BlockState blockState){
+        return blockState.isOf(Blocks.FLOWERING_AZALEA_LEAVES);
+    }
+    private void UseOnFloweringAzaleaLeave(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState6 = Blocks.AZALEA_LEAVES.getDefaultState();
+        world.setBlockState(blockPos,blockState6);
+    }
+
+    private boolean BlockIsSpawner(BlockState blockState){
+        return blockState.isOf(Blocks.SPAWNER);
+    }
+    private void UseOnSpawner(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsMushroom(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.MUSHROOMS_LIST);
+    }
+    private void UseOnMushroom(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsShroomLight(BlockState blockState){
+        return blockState.isOf(Blocks.SHROOMLIGHT);
+    }
+    private void UseOnShroomLight(PlayerEntity player, World world, BlockPos blockPos) {
+        world.breakBlock(blockPos, false);
+    }
+
+    private boolean BlockIsDirt(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.DIRT_LIST);
+    }
+    private void UseOnDirt(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState1 = Blocks.DIRT.getDefaultState();
+        world.setBlockState(blockPos,blockState1);
+    }
+
+    private boolean BlockIsOtherPlants(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.OTHER_PLANTS_LIST);
+    }
+    private void UseOnOtherPlants(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsSculkBlocks(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.SCULK_BLOCKS_LIST);
+    }
+    private void UseOnSculkBlocks(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsNetherRacks(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.NETHER_RACKS_LIST);
+    }
+    private void UseOnNetherRacks(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState1 = Blocks.NETHERRACK.getDefaultState();
+        world.setBlockState(blockPos,blockState1);
+    }
+
+    private boolean BlockIsGlowStone(BlockState blockState){
+        return blockState.isOf(Blocks.GLOWSTONE);
+    }
+    private void UseOnGlowStone(PlayerEntity player, World world, BlockPos blockPos) {
+        world.breakBlock(blockPos, false);
+    }
+
+    private boolean BlockIsAmethystCluster(BlockState blockState){
+        return blockState.isOf(Blocks.AMETHYST_CLUSTER);
+    }
+    private void UseOnAmethystCluster(PlayerEntity player, World world, BlockPos blockPos) {
+        world.breakBlock(blockPos, false);
+    }
+
+
     private static int RollNumber1(){
         return Random.createLocal().nextInt(9);
     }
@@ -195,5 +334,17 @@ public class GARUINKA_COLLECTORS extends Item {
     }
     private static int RollNumber4(){
         return Random.createLocal().nextInt(81);
+    }
+    private static int RollNumber5(){
+        return Random.createLocal().nextInt(501);
+    }
+    private static int RollNumber6() {
+        return Random.createLocal().nextInt(19);
+    }
+    private static int RollNumber7() {
+        return Random.createLocal().nextInt(4);
+    }
+    private static int RollNumber8() {
+        return Random.createLocal().nextInt(16);
     }
 }

@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:vine",
+    "minecraft:bamboo_sapling",
+    "minecraft:sea_pickle",
+    "minecraft:small_dripleaf",
+    "minecraft:big_dripleaf",
+    "minecraft:big_dripleaf_stem",
+    "minecraft:hanging_roots",
+    "minecraft:warped_roots",
+    "minecraft:glow_lichen",
+    "minecraft:moss_carpet",
+    "minecraft:moss_block",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:twisting_vines",
+    "minecraft:twisting_vines_plant",
+    "minecraft:cactus",
+    "minecraft:sugar_cane",
+    "minecraft:lily_pad"
+  ]
+}

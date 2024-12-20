@@ -4,6 +4,10 @@
     "minecraft:tall_grass",
     "minecraft:grass",
     "minecraft:large_fern",
-    "minecraft:fern"
+    "minecraft:fern",
+    "minecraft:nether_sprouts",
+    "minecraft:crimson_roots",
+    "minecraft:seagrass",
+    "minecraft:tall_seagrass"
   ]
 }
