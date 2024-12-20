@@ -9,6 +9,10 @@ import net.minecraft.util.Identifier;
 
 public class ModTags {
     public static class Blocks{
+        public static final TagKey<Block> FLOWERS_LIST = createTag("flowers_list");
+        public static final TagKey<Block> GRASS_LIST = createTag("grass_list");
+        public static final TagKey<Block> SAPLINGS_LIST = createTag("saplings_list");
+
         public static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK,new Identifier(CuriterMod.MOD_ID,name));
         }

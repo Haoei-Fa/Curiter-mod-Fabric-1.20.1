@@ -1,7 +1,8 @@
 package com.curiter.item.custom;
 
-import com.curiter.block.ModBlocks;
+import com.curiter.util.ModTags;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -26,12 +27,56 @@ public class GARUINKA_COLLECTORS extends Item {
             PlayerEntity player = context.getPlayer();
             ItemStack stack = context.getStack();
             BlockState BlockState = world.getBlockState(context.getBlockPos());
-            if (BlockIsRight(BlockState)){
+            //对草方块使用
+            if (BlockIsGrassBlock(BlockState)){
                 if (context.getStack().getDamage() != 0) {
-                    ObtainGaruinka(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500 - Rollumber(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    UseOnGrassBlock(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
             }
+
+            else if (BlockIsWitherRose(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnWitherRose(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+            //对花卉使用
+            else if (BlockIsFlowers(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnFlowers(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+            //对草使用
+            else if (BlockIsGrass(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnGrass(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-2, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+            //对树苗使用
+            else if (BlockIsSaplings(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnSaplings(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-5-RollNumber2(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+            //对红石矿使用
+            else if (BlockIsRedStone(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnRedStone(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+            //对深层红石矿使用
+            else if (BlockIsDeepSlateRedStone(BlockState)){
+                if (context.getStack().getDamage() != 0) {
+                    UseOnDeepSlateRedStone(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+            }
+
         }
 
         return super.useOnBlock(context);
@@ -45,7 +90,7 @@ public class GARUINKA_COLLECTORS extends Item {
             timer++;
             if (stack.getDamage() != 0){
                 if(timer >= 200){
-                    stack.setDamage(stack.getDamage()-1000);
+                    stack.setDamage(stack.getDamage()-1);
                     timer = 0;
                 }
             }
@@ -59,15 +104,67 @@ public class GARUINKA_COLLECTORS extends Item {
         stack.setDamage(10000);
     }
 
-    private boolean BlockIsRight(BlockState blockState){
-        return blockState.isOf(ModBlocks.CURITER_BLOCK);
+    private boolean BlockIsGrassBlock(BlockState blockState){
+        return blockState.isOf(Blocks.GRASS_BLOCK);
     }
-    private void ObtainGaruinka(PlayerEntity player,World world,BlockPos blockPos){
+    private void UseOnGrassBlock(PlayerEntity player, World world, BlockPos blockPos){
+       BlockState blockState1 = Blocks.DIRT.getDefaultState();
+        world.setBlockState(blockPos,blockState1);
+    }
+
+    private boolean BlockIsWitherRose(BlockState blockState){
+        return blockState.isOf(Blocks.WITHER_ROSE);
+    }
+    private void UseOnWitherRose(PlayerEntity player, World world, BlockPos blockPos){
         world.breakBlock(blockPos,false);
     }
 
-    private static int Rollumber(){
-        return Random.createLocal().nextInt(2501);
+    private boolean BlockIsFlowers(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.FLOWERS_LIST);
+    }
+    private void UseOnFlowers(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsGrass(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.GRASS_LIST);
+    }
+    private void UseOnGrass(PlayerEntity player, World world, BlockPos blockPos){
+        world.breakBlock(blockPos,false);
+    }
+
+    private boolean BlockIsSaplings(BlockState blockState){
+        return blockState.isIn(ModTags.Blocks.SAPLINGS_LIST);
+    }
+    private void UseOnSaplings(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState2 = Blocks.DEAD_BUSH.getDefaultState();
+        world.setBlockState(blockPos,blockState2);
+    }
+
+    private boolean BlockIsRedStone(BlockState blockState){
+        return blockState.isOf(Blocks.REDSTONE_ORE);
+    }
+    private void UseOnRedStone(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState3 = Blocks.STONE.getDefaultState();
+        world.setBlockState(blockPos,blockState3);
+    }
+
+    private boolean BlockIsDeepSlateRedStone(BlockState blockState){
+        return blockState.isOf(Blocks.DEEPSLATE_REDSTONE_ORE);
+    }
+    private void UseOnDeepSlateRedStone(PlayerEntity player, World world, BlockPos blockPos){
+        BlockState blockState4 = Blocks.DEEPSLATE.getDefaultState();
+        world.setBlockState(blockPos,blockState4);
+    }
+
+    private static int RollNumber1(){
+        return Random.createLocal().nextInt(9);
+    }
+    private static int RollNumber2(){
+        return Random.createLocal().nextInt(6);
+    }
+    private static int RollNumber3(){
+        return Random.createLocal().nextInt(31);
     }
 
 }
