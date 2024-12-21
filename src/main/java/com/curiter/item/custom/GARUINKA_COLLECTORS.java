@@ -43,12 +43,12 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对凋零玫瑰使用
                 else if (BlockIsWitherRose(BlockState)){
                     UseOnWitherRose(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-20- RollNumber30(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对花卉使用
                 else if (BlockIsFlowers(BlockState)){
                     UseOnFlowers(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
 
                 }
                 //对草使用
@@ -59,27 +59,27 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对盛开的杜鹃花丛使用
                 else if (BlockIsFloweringAzalea(BlockState)){
                     UseOnFloweringAzalea(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对树苗使用
                 else if (BlockIsSaplings(BlockState)){
                     UseOnSaplings(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-5-RollNumber2(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-5- RollNumber5(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对红石矿使用
                 else if (BlockIsRedStone(BlockState)){
                     UseOnRedStone(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-20- RollNumber30(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对深层红石矿使用
                 else if (BlockIsDeepSlateRedStone(BlockState)){
                     UseOnDeepSlateRedStone(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-20- RollNumber30(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对盛开的杜鹃树叶使用
                 else if (BlockIsFloweringAzaleaLeave(BlockState)){
                     UseOnFloweringAzaleaLeave(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对树叶使用
                 else if (BlockIsLeaves(BlockState)){
@@ -89,17 +89,17 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对刷怪笼使用
                 else if (BlockIsSpawner(BlockState)){
                     UseOnSpawner(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500-RollNumber5(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-500- RollNumber500(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对蘑菇类方块使用
                 else if (BlockIsMushroom(BlockState)){
                     UseOnMushroom(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber1(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对菌光体使用
                 else if (BlockIsShroomLight(BlockState)){
                     UseOnShroomLight(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber6(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber18(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对泥土变种使用
                 else if (BlockIsDirt(BlockState)){
@@ -109,12 +109,12 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对其他植物使用
                 else if (BlockIsOtherPlants(BlockState)){
                     UseOnOtherPlants(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber7(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对幽匿方块使用
                 else if (BlockIsSculkBlocks(BlockState)){
                     UseOnSculkBlocks(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-2-RollNumber7(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-2- RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对下界岩变种使用
                 else if (BlockIsNetherRacks(BlockState)){
@@ -124,22 +124,22 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对萤石使用
                 else if (BlockIsGlowStone(BlockState)){
                     UseOnGlowStone(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-5-RollNumber8(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-5- RollNumber15(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对紫水晶使用
                 else if (BlockIsAmethystCluster(BlockState)){
                     UseOnAmethystCluster(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-20- RollNumber30(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对格林卡富集矿使用
                 else if (BlockIsGaruinkaMineral(BlockState)){
                     UseOnGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500-RollNumber9(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-500- RollNumber1500(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对深层格林卡富集矿使用
                 else if (BlockIsDeepslateGaruinkaMineral(BlockState)){
                     UseOnDeepslateGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500-RollNumber9(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-500- RollNumber1500(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
             }
         }
@@ -160,7 +160,7 @@ public class GARUINKA_COLLECTORS extends Item {
                     if (user.getStackInHand(hand).getDamage() != 0){
                         AreaEffectCloudEntity areaEffectCloudEntity = (AreaEffectCloudEntity)list.get(0);
                         areaEffectCloudEntity.setRadius(areaEffectCloudEntity.getRadius() - 0.5F);
-                        user.getStackInHand(hand).setDamage(user.getStackInHand(hand).getDamage()-RollNumber4()-20);
+                        user.getStackInHand(hand).setDamage(user.getStackInHand(hand).getDamage()- RollNumber80()-20);
                     }
                 }
         }
@@ -348,31 +348,31 @@ public class GARUINKA_COLLECTORS extends Item {
         world.setBlockState(blockPos, blockState);
     }
 
-    private static int RollNumber1(){
-        return Random.createLocal().nextInt(9);
-    }
-    private static int RollNumber2(){
-        return Random.createLocal().nextInt(6);
-    }
-    private static int RollNumber3(){
-        return Random.createLocal().nextInt(31);
-    }
-    private static int RollNumber4(){
-        return Random.createLocal().nextInt(81);
-    }
-    private static int RollNumber5(){
-        return Random.createLocal().nextInt(501);
-    }
-    private static int RollNumber6() {
-        return Random.createLocal().nextInt(19);
-    }
-    private static int RollNumber7() {
+    private static int RollNumber3() {
         return Random.createLocal().nextInt(4);
     }
-    private static int RollNumber8() {
+    private static int RollNumber5(){
+        return Random.createLocal().nextInt(6);
+    }
+    private static int RollNumber8(){
+        return Random.createLocal().nextInt(9);
+    }
+    private static int RollNumber15() {
         return Random.createLocal().nextInt(16);
     }
-    private static int RollNumber9() {
+    private static int RollNumber18() {
+        return Random.createLocal().nextInt(19);
+    }
+    private static int RollNumber30(){
+        return Random.createLocal().nextInt(31);
+    }
+    private static int RollNumber80(){
+        return Random.createLocal().nextInt(81);
+    }
+    private static int RollNumber500(){
+        return Random.createLocal().nextInt(501);
+    }
+    private static int RollNumber1500() {
         return Random.createLocal().nextInt(1501);
     }
 }
