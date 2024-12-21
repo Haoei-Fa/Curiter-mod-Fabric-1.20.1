@@ -19,6 +19,7 @@ public class ModItemGroups {
                 entries.add(ModItems.GARUINKA_STORAGE_BOTTLE);
                 entries.add(ModItems.GARUINKA);
                 entries.add(ModItems.GARUINKA_COLLECTORS);
+                entries.add(ModItems.GARUINKA_DETECTORS);
                 entries.add(ModBlocks.CURITER_BLOCK);
                 entries.add(ModBlocks.GARUINKA_MINERAL);
                 entries.add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);

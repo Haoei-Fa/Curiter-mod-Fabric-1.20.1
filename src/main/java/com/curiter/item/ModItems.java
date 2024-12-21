@@ -4,6 +4,7 @@ import com.curiter.CuriterMod;
 import com.curiter.block.ModBlocks;
 import com.curiter.item.custom.GARUINKA;
 import com.curiter.item.custom.GARUINKA_COLLECTORS;
+import com.curiter.item.custom.GARUINKA_DETECTORS;
 import com.curiter.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -19,6 +20,8 @@ public class ModItems {
     public static final Item GARUINKA = registerItems("garuinka",new GARUINKA(new FabricItemSettings().maxCount(16)));
     public static final Item GARUINKA_STORAGE_BOTTLE = registerItems("garuinka_storage_bottle",new Item(new FabricItemSettings().maxCount(16)));
     public static final Item GARUINKA_COLLECTORS = registerItems("garuinka_collectors",new GARUINKA_COLLECTORS(new FabricItemSettings().maxDamage(10000)));
+    public static final Item GARUINKA_DETECTORS = registerItems("garuinka_detectors",new GARUINKA_DETECTORS(new FabricItemSettings().maxDamage(64)));
+
     public static final Item DISC_EMPTY = registerItems("disc_empty",new Item(new FabricItemSettings().maxCount(16)));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",

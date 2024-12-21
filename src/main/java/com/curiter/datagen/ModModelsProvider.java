@@ -25,6 +25,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GARUINKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_STORAGE_BOTTLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.GARUINKA_DETECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACK_BLOOD_MUSIC_DISC, Models.GENERATED);
