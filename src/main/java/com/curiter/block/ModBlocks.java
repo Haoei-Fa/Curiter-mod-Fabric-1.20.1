@@ -14,6 +14,12 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block CURITER_BLOCK = registerBlocks("curiter_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+    public static final Block GARUINKA_MINERAL = registerBlocks("garuinka_mineral",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).luminance(4)));
+    public static final Block DEEPSLATE_GARUINKA_MINERAL = registerBlocks("deepslate_garuinka_mineral",
+            new Block(FabricBlockSettings.copyOf(Blocks.STONE).luminance(4)));
+
+
 
     private static Block registerBlocks(String name,Block block){
         registerBlockItems(name, block);

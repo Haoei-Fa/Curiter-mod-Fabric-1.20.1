@@ -1,5 +1,6 @@
 package com.curiter.datagen;
 
+import com.curiter.block.ModBlocks;
 import com.curiter.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
@@ -87,5 +88,9 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(ModTags.Blocks.NETHER_RACKS_LIST)
                 .add(Blocks.CRIMSON_NYLIUM)
                 .add(Blocks.WARPED_NYLIUM);
+        //格林卡矿物
+        getOrCreateTagBuilder(ModTags.Blocks.GARUINKA_MINERALS)
+                .add(ModBlocks.GARUINKA_MINERAL)
+                .add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);
     }
 }

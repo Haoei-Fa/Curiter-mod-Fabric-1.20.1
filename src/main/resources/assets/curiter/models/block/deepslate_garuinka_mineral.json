@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "curiter:block/deepslate_garuinka_mineral_top",
+    "side": "curiter:block/deepslate_garuinka_mineral"
+  }
+}

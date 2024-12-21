@@ -1,8 +1,9 @@
-// 1.20.1	2024-12-21T03:23:14.5503377	Curiter Mod/Model Definitions
+// 1.20.1	2024-12-21T11:22:12.5141192	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 779e3a6f195e48e7618b990304b8c04cebb412fc assets\curiter\models\item\disc_empty.json
 e8a83be72e7b17491d30ca44778222b7b26be145 assets\curiter\models\item\garuinka_collectors.json
 78b433ae9b1bb5636f93b5451422337ca176f0c6 assets\curiter\models\item\evanescent_star_music_disc.json
+b897f0f88303302ab37194555ff4595373153a03 assets\curiter\blockstates\garuinka_mineral.json
 cdeaa5e2273b3abd7e6cba62074c95786d1961e1 assets\curiter\models\item\candy_star_paradise_music_disc.json
 e8130f0fded437beb6cf84867d320081314ed0a8 assets\curiter\models\item\god_ghosts_and_dao_symbol_music_disc.json
 1c959c94a9c3ced43d8913d9b44d65562d2b9ad7 assets\curiter\models\item\gravitational_equilibrium_music_disc.json
@@ -15,6 +16,7 @@ ceb9bbbfbeabf00e2f136c7fe724068b6bf11ae2 assets\curiter\models\item\crashed_star
 6663175f9ea1b65b53d4e6d17f690417dab01ade assets\curiter\models\item\blood_falsehood_music_disc.json
 e9980a0ff1c0bca09125f50c2812380899a4bc65 assets\curiter\models\item\the_curiter_music_disc.json
 6ffc08c55880fe7220a701657e304c5e0f49c173 assets\curiter\models\item\dimension_cabinet_music_disc.json
+f131f5d6798b59619b81dbc4daa75275b13bfcfa assets\curiter\models\block\garuinka_mineral.json
 033f68d19049ed9dafe1585758bc78c53076b03f assets\curiter\models\item\the_paradox_of_theorem_seven_music_disc.json
 3f60f4bb0f6e5905a780d10fdbc52f0af5a6d81e assets\curiter\models\item\black_blood_music_disc.json
 26ba74a1e179d37ad8db061fe77cbab44cb34cc1 assets\curiter\models\item\glitch_art_music_disc.json

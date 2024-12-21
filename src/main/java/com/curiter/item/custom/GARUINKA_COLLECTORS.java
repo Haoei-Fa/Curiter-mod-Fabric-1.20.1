@@ -1,5 +1,6 @@
 package com.curiter.item.custom;
 
+import com.curiter.block.ModBlocks;
 import com.curiter.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -130,6 +131,16 @@ public class GARUINKA_COLLECTORS extends Item {
                     UseOnAmethystCluster(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-20-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
+                //对格林卡富集矿使用
+                else if (BlockIsGaruinkaMineral(BlockState)){
+                    UseOnGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-500-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
+                //对深层格林卡富集矿使用
+                else if (BlockIsDeepslateGaruinkaMineral(BlockState)){
+                    UseOnDeepslateGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-500-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
             }
         }
 
@@ -185,8 +196,8 @@ public class GARUINKA_COLLECTORS extends Item {
         return blockState.isOf(Blocks.GRASS_BLOCK);
     }
     private void UseOnGrassBlock(PlayerEntity player, World world, BlockPos blockPos){
-       BlockState blockState1 = Blocks.DIRT.getDefaultState();
-        world.setBlockState(blockPos,blockState1);
+       BlockState blockState = Blocks.DIRT.getDefaultState();
+        world.setBlockState(blockPos, blockState);
     }
 
     private boolean BlockIsWitherRose(BlockState blockState){
@@ -214,24 +225,24 @@ public class GARUINKA_COLLECTORS extends Item {
         return blockState.isIn(ModTags.Blocks.SAPLINGS_LIST);
     }
     private void UseOnSaplings(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState2 = Blocks.DEAD_BUSH.getDefaultState();
-        world.setBlockState(blockPos,blockState2);
+        BlockState blockState = Blocks.DEAD_BUSH.getDefaultState();
+        world.setBlockState(blockPos, blockState);
     }
 
     private boolean BlockIsRedStone(BlockState blockState){
         return blockState.isOf(Blocks.REDSTONE_ORE);
     }
     private void UseOnRedStone(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState3 = Blocks.STONE.getDefaultState();
-        world.setBlockState(blockPos,blockState3);
+        BlockState blockState = Blocks.STONE.getDefaultState();
+        world.setBlockState(blockPos, blockState);
     }
 
     private boolean BlockIsDeepSlateRedStone(BlockState blockState){
         return blockState.isOf(Blocks.DEEPSLATE_REDSTONE_ORE);
     }
     private void UseOnDeepSlateRedStone(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState4 = Blocks.DEEPSLATE.getDefaultState();
-        world.setBlockState(blockPos,blockState4);
+        BlockState blockState = Blocks.DEEPSLATE.getDefaultState();
+        world.setBlockState(blockPos, blockState);
     }
 
     private boolean BlockIsLeaves(BlockState blockState){
@@ -245,16 +256,16 @@ public class GARUINKA_COLLECTORS extends Item {
         return blockState.isOf(Blocks.FLOWERING_AZALEA);
     }
     private void UseOnFloweringAzalea(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState5 = Blocks.AZALEA.getDefaultState();
-        world.setBlockState(blockPos,blockState5);
+        BlockState blockState = Blocks.AZALEA.getDefaultState();
+        world.setBlockState(blockPos,blockState);
     }
 
     private boolean BlockIsFloweringAzaleaLeave(BlockState blockState){
         return blockState.isOf(Blocks.FLOWERING_AZALEA_LEAVES);
     }
     private void UseOnFloweringAzaleaLeave(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState6 = Blocks.AZALEA_LEAVES.getDefaultState();
-        world.setBlockState(blockPos,blockState6);
+        BlockState blockState = Blocks.AZALEA_LEAVES.getDefaultState();
+        world.setBlockState(blockPos,blockState);
     }
 
     private boolean BlockIsSpawner(BlockState blockState){
@@ -282,8 +293,8 @@ public class GARUINKA_COLLECTORS extends Item {
         return blockState.isIn(ModTags.Blocks.DIRT_LIST);
     }
     private void UseOnDirt(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState1 = Blocks.DIRT.getDefaultState();
-        world.setBlockState(blockPos,blockState1);
+        BlockState blockState = Blocks.DIRT.getDefaultState();
+        world.setBlockState(blockPos,blockState);
     }
 
     private boolean BlockIsOtherPlants(BlockState blockState){
@@ -304,8 +315,8 @@ public class GARUINKA_COLLECTORS extends Item {
         return blockState.isIn(ModTags.Blocks.NETHER_RACKS_LIST);
     }
     private void UseOnNetherRacks(PlayerEntity player, World world, BlockPos blockPos){
-        BlockState blockState1 = Blocks.NETHERRACK.getDefaultState();
-        world.setBlockState(blockPos,blockState1);
+        BlockState blockState = Blocks.NETHERRACK.getDefaultState();
+        world.setBlockState(blockPos,blockState);
     }
 
     private boolean BlockIsGlowStone(BlockState blockState){
@@ -322,6 +333,20 @@ public class GARUINKA_COLLECTORS extends Item {
         world.breakBlock(blockPos, false);
     }
 
+    private boolean BlockIsGaruinkaMineral(BlockState blockState){
+        return blockState.isOf(ModBlocks.GARUINKA_MINERAL);
+    }
+    private void UseOnGaruinkaMineral(PlayerEntity player, World world, BlockPos blockPos) {
+        BlockState blockState = Blocks.STONE.getDefaultState();
+        world.setBlockState(blockPos, blockState);
+    }
+    private boolean BlockIsDeepslateGaruinkaMineral(BlockState blockState){
+        return blockState.isOf(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);
+    }
+    private void UseOnDeepslateGaruinkaMineral(PlayerEntity player, World world, BlockPos blockPos) {
+        BlockState blockState = Blocks.DEEPSLATE.getDefaultState();
+        world.setBlockState(blockPos, blockState);
+    }
 
     private static int RollNumber1(){
         return Random.createLocal().nextInt(9);
@@ -346,5 +371,8 @@ public class GARUINKA_COLLECTORS extends Item {
     }
     private static int RollNumber8() {
         return Random.createLocal().nextInt(16);
+    }
+    private static int RollNumber9() {
+        return Random.createLocal().nextInt(1501);
     }
 }

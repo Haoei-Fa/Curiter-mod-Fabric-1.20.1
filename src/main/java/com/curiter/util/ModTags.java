@@ -18,6 +18,7 @@ public class ModTags {
         public static final TagKey<Block> OTHER_PLANTS_LIST = createTag("other_plants_list");
         public static final TagKey<Block> SCULK_BLOCKS_LIST = createTag("sculk_blocks_list");
         public static final TagKey<Block> NETHER_RACKS_LIST = createTag("nether_racks_list");
+        public static final TagKey<Block> GARUINKA_MINERALS = createTag("garuinka_minerals");
 
         public static TagKey<Block> createTag(String name){
             return TagKey.of(RegistryKeys.BLOCK,new Identifier(CuriterMod.MOD_ID,name));

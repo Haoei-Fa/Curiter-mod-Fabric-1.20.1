@@ -20,6 +20,8 @@ public class ModItemGroups {
                 entries.add(ModItems.GARUINKA);
                 entries.add(ModItems.GARUINKA_COLLECTORS);
                 entries.add(ModBlocks.CURITER_BLOCK);
+                entries.add(ModBlocks.GARUINKA_MINERAL);
+                entries.add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);
                 entries.add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC);
                 entries.add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC);
                 entries.add(ModItems.BLACK_BLOOD_MUSIC_DISC);

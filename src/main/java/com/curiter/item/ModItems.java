@@ -16,7 +16,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item GARUINKA = registerItems("garuinka",new GARUINKA(new FabricItemSettings().maxCount(1)));
+    public static final Item GARUINKA = registerItems("garuinka",new GARUINKA(new FabricItemSettings().maxCount(16)));
     public static final Item GARUINKA_STORAGE_BOTTLE = registerItems("garuinka_storage_bottle",new Item(new FabricItemSettings().maxCount(16)));
     public static final Item GARUINKA_COLLECTORS = registerItems("garuinka_collectors",new GARUINKA_COLLECTORS(new FabricItemSettings().maxDamage(10000)));
     public static final Item DISC_EMPTY = registerItems("disc_empty",new Item(new FabricItemSettings().maxCount(16)));
