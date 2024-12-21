@@ -134,12 +134,12 @@ public class GARUINKA_COLLECTORS extends Item {
                 //对格林卡富集矿使用
                 else if (BlockIsGaruinkaMineral(BlockState)){
                     UseOnGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-500-RollNumber9(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
                 //对深层格林卡富集矿使用
                 else if (BlockIsDeepslateGaruinkaMineral(BlockState)){
                     UseOnDeepslateGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
-                    context.getStack().damage(-500-RollNumber3(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                    context.getStack().damage(-500-RollNumber9(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
             }
         }
