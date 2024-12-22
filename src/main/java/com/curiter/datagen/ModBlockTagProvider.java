@@ -91,6 +91,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         //格林卡矿物
         getOrCreateTagBuilder(ModTags.Blocks.GARUINKA_MINERALS)
                 .add(ModBlocks.GARUINKA_MINERAL)
-                .add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);
+                .add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL)
+                .add(ModBlocks.NETHER_GARUINKA_MINERAL)
+                .add(ModBlocks.END_GARUINKA_MINERAL) ;
     }
 }

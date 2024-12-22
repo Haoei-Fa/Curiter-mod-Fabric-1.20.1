@@ -2,6 +2,8 @@
   "replace": false,
   "values": [
     "curiter:garuinka_mineral",
-    "curiter:deepslate_garuinka_mineral"
+    "curiter:deepslate_garuinka_mineral",
+    "curiter:nether_garuinka_mineral",
+    "curiter:end_garuinka_mineral"
   ]
 }

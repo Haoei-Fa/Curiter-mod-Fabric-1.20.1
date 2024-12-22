@@ -16,12 +16,22 @@ import java.util.List;
 
 public class ModPlacedFeatures {
     public static final RegistryKey<PlacedFeature> GARUINKA_MINERALS_PLACED_KEY = registerKey("garuinka_minerals_placed");
+    public static final RegistryKey<PlacedFeature> NETHER_GARUINKA_MINERALS_PLACED_KEY = registerKey("nether_garuinka_minerals_placed");
+    public static final RegistryKey<PlacedFeature> END_GARUINKA_MINERALS_PLACED_KEY = registerKey("end_garuinka_minerals_placed");
 
     public static void boostrap(Registerable<PlacedFeature> context) {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
+
+
         register(context, GARUINKA_MINERALS_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.GARUINKA_MINERALS_KEY),
+                ModOrePlacement.modifiersWithCount(10,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(-60), YOffset.fixed(240))));
+        register(context,NETHER_GARUINKA_MINERALS_PLACED_KEY,configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.NETHER_GARUINKA_MINERALS_KEY),
+                ModOrePlacement.modifiersWithCount(5,
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0),YOffset.fixed(200))));
+        register(context,END_GARUINKA_MINERALS_PLACED_KEY,configuredFeatureRegistryEntryLookup.getOrThrow(ModConfiguredFeatures.END_GARUINKA_MINERALS_KEY),
                 ModOrePlacement.modifiersWithCount(2,
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-60), YOffset.fixed(120))));
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0),YOffset.fixed(150))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {

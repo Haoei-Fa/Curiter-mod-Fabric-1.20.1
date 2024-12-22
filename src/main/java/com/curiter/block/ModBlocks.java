@@ -17,7 +17,11 @@ public class ModBlocks {
     public static final Block GARUINKA_MINERAL = registerBlocks("garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).luminance(4)));
     public static final Block DEEPSLATE_GARUINKA_MINERAL = registerBlocks("deepslate_garuinka_mineral",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).luminance(4)));
+            new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).luminance(4)));
+    public static final Block NETHER_GARUINKA_MINERAL = registerBlocks("nether_garuinka_mineral",
+            new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).luminance(4)));
+    public static final Block END_GARUINKA_MINERAL = registerBlocks("end_garuinka_mineral",
+            new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).luminance(4)));
 
 
 

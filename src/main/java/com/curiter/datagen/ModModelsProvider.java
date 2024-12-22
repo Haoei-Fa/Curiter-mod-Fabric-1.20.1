@@ -17,6 +17,8 @@ public class ModModelsProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CURITER_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GARUINKA_MINERAL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_GARUINKA_MINERAL);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.END_GARUINKA_MINERAL);
     }
 
     @Override

@@ -3,6 +3,7 @@ package com.curiter.item.custom;
 import com.curiter.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
+import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -22,7 +23,7 @@ public class GARUINKA_DETECTORS extends Item {
             boolean foundBlock = false;
             context.getStack().damage(1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 //模糊搜索
-                for (int i = -7; i <= 7; i++) {
+                for (int i = -100; i <= 100; i++) {
                     for (int j = -7; j <= 7; j++) {
                         for (int k = -7; k <= 7; k++) {
                             BlockPos pos1 = pos.down(i).south(j).west(k);
@@ -50,7 +51,7 @@ public class GARUINKA_DETECTORS extends Item {
     }
 
     private boolean FoundGaruinkaMinerals(BlockState blockState) {
-        if (blockState.isIn(ModTags.Blocks.GARUINKA_MINERALS)){
+        if (blockState.isIn(ModTags.Blocks.GARUINKA_MINERALS) || blockState.isOf(Blocks.SPAWNER)){
             return true;
         }
         else {
