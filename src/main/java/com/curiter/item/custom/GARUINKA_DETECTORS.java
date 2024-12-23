@@ -23,7 +23,7 @@ public class GARUINKA_DETECTORS extends Item {
             boolean foundBlock = false;
             context.getStack().damage(1, context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 //模糊搜索
-                for (int i = -100; i <= 100; i++) {
+                for (int i = -7; i <= 7; i++) {
                     for (int j = -7; j <= 7; j++) {
                         for (int k = -7; k <= 7; k++) {
                             BlockPos pos1 = pos.down(i).south(j).west(k);
