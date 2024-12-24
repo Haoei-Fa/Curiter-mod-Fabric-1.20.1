@@ -10,6 +10,7 @@
   "block.curiter.deepslate_garuinka_mineral": "深层格林卡富集矿",
   "block.curiter.nether_garuinka_mineral": "地狱格林卡富集矿",
   "block.curiter.end_garuinka_mineral": "末地格林卡富集矿",
+  "block.curiter.garuinka_extractors": "格林卡萃取器",
   "itemGroup.curiter_music_disc": "翆璃塔音乐唱片",
   "sounds.curiter.the_paradox_of_theorem_seven": "七号定理悖论",
   "sounds.curiter.candy_star_paradise": "糖星乐园",
@@ -52,5 +53,6 @@
   "item.curiter.glitch_art_music_disc": "§b翆璃塔音乐唱片",
   "item.curiter.glitch_art_music_disc.desc": "错误艺术-翆璃塔",
   "item.curiter.the_sukatuo_music_disc": "§b翆璃塔音乐唱片",
-  "item.curiter.the_sukatuo_music_disc.desc": "碎时塔-翆璃塔"
+  "item.curiter.the_sukatuo_music_disc.desc": "碎时塔-翆璃塔",
+  "garuinka_extractors_gui_name": "格林卡萃取器"
 }

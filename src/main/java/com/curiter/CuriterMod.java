@@ -1,6 +1,7 @@
 package com.curiter;
 
 import com.curiter.block.ModBlocks;
+import com.curiter.block.entity.ModBlockEntities;
 import com.curiter.item.ModItemGroups;
 import com.curiter.item.ModItems;
 import com.curiter.sounds.ModSounds;
@@ -22,5 +23,6 @@ public class CuriterMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 		ModSounds.registerSounds();
 		ModWorldGeneration.generateModWorldGen();
+		ModBlockEntities.registerBlockEntities();
 	}
 }

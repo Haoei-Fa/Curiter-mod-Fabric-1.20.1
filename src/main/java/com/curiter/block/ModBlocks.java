@@ -1,6 +1,7 @@
 package com.curiter.block;
 
 import com.curiter.CuriterMod;
+import com.curiter.block.custom.GARUINKA_EXTRACTORS;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -22,6 +23,8 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).luminance(4)));
     public static final Block END_GARUINKA_MINERAL = registerBlocks("end_garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).luminance(4)));
+    public static final Block GARUINKA_EXTRACTORS = registerBlocks("garuinka_extractors",
+            new GARUINKA_EXTRACTORS(FabricBlockSettings.copyOf(Blocks.STONE)));
 
 
 
