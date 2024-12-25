@@ -23,6 +23,8 @@ public class ModItems {
     public static final Item GARUINKA_DETECTORS = registerItems("garuinka_detectors",new GARUINKA_DETECTORS(new FabricItemSettings().maxDamage(64)));
 
     public static final Item DISC_EMPTY = registerItems("disc_empty",new Item(new FabricItemSettings().maxCount(16)));
+    public static final Item COGS = registerItems("cogs",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item COPPER_NUGGET = registerItems("copper_nugget",new Item(new FabricItemSettings().maxCount(64)));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",
             new MusicDiscItem(7, ModSounds.THE_PARADOX_OF_THEOREM_SEVEN,new FabricItemSettings().maxCount(1),160));
@@ -60,16 +62,31 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToItemGroupINGREDIENTS);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(ModItems::addItemsToItemGroupNATURAL);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(ModItems::addItemsToItemGroupOPERATOR);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::addItemsToItemGroupFUNCTIONAL);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToItemGroupTOOLS);
     }
     public static void addItemsToItemGroupINGREDIENTS(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);
         fabricItemGroupEntries.add(DISC_EMPTY);
         fabricItemGroupEntries.add(GARUINKA_STORAGE_BOTTLE);
+        fabricItemGroupEntries.add(COGS);
+        fabricItemGroupEntries.add(COPPER_NUGGET);
     }
     public static void addItemsToItemGroupNATURAL(FabricItemGroupEntries fabricItemGroupEntries){
-        fabricItemGroupEntries.add(GARUINKA);
+        fabricItemGroupEntries.add(ModBlocks.GARUINKA_MINERAL);
+        fabricItemGroupEntries.add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);
+        fabricItemGroupEntries.add(ModBlocks.NETHER_GARUINKA_MINERAL);
+        fabricItemGroupEntries.add(ModBlocks.END_GARUINKA_MINERAL);
     }
     public static void addItemsToItemGroupOPERATOR(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ModBlocks.CURITER_BLOCK);
+    }
+    public static void addItemsToItemGroupFUNCTIONAL(FabricItemGroupEntries fabricItemGroupEntries){
+        fabricItemGroupEntries.add(ModBlocks.GARUINKA_EXTRACTORS);
+    }
+    public static void addItemsToItemGroupTOOLS(FabricItemGroupEntries fabricItemGroupEntries){
+        fabricItemGroupEntries.add(GARUINKA);
+        fabricItemGroupEntries.add(GARUINKA_COLLECTORS);
+        fabricItemGroupEntries.add(GARUINKA_DETECTORS);
     }
 }

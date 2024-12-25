@@ -25,6 +25,8 @@ public class ModModelsProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.DISC_EMPTY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_STORAGE_BOTTLE, Models.GENERATED);

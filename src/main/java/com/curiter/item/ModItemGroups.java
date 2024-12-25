@@ -16,6 +16,7 @@ public class ModItemGroups {
             .icon(() -> new ItemStack(ModBlocks.CURITER_BLOCK)).
             entries((displayContext, entries) -> {
                 entries.add(ModItems.DISC_EMPTY);
+                entries.add(ModItems.COGS);
                 entries.add(ModItems.GARUINKA_STORAGE_BOTTLE);
                 entries.add(ModItems.GARUINKA);
                 entries.add(ModItems.GARUINKA_COLLECTORS);
