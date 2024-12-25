@@ -17,10 +17,12 @@ public class ModItemGroups {
             entries((displayContext, entries) -> {
                 entries.add(ModItems.DISC_EMPTY);
                 entries.add(ModItems.COGS);
+                entries.add(ModItems.RESIN);
                 entries.add(ModItems.GARUINKA_STORAGE_BOTTLE);
                 entries.add(ModItems.GARUINKA);
                 entries.add(ModItems.GARUINKA_COLLECTORS);
                 entries.add(ModItems.GARUINKA_DETECTORS);
+                entries.add(ModItems.RESIN_SCYTHE);
                 entries.add(ModBlocks.CURITER_BLOCK);
                 entries.add(ModBlocks.GARUINKA_MINERAL);
                 entries.add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL);

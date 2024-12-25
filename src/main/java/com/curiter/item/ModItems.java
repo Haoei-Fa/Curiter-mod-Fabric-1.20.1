@@ -5,6 +5,7 @@ import com.curiter.block.ModBlocks;
 import com.curiter.item.custom.GARUINKA;
 import com.curiter.item.custom.GARUINKA_COLLECTORS;
 import com.curiter.item.custom.GARUINKA_DETECTORS;
+import com.curiter.item.custom.RESIN_SCYTHE;
 import com.curiter.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -25,6 +26,9 @@ public class ModItems {
     public static final Item DISC_EMPTY = registerItems("disc_empty",new Item(new FabricItemSettings().maxCount(16)));
     public static final Item COGS = registerItems("cogs",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item COPPER_NUGGET = registerItems("copper_nugget",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item RESIN = registerItems("resin",new Item(new FabricItemSettings().maxCount(64)));
+
+    public static final Item RESIN_SCYTHE = registerItems("resin_scythe",new RESIN_SCYTHE(ModToolMaterial.IRONS,0,10F,new FabricItemSettings()));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",
             new MusicDiscItem(7, ModSounds.THE_PARADOX_OF_THEOREM_SEVEN,new FabricItemSettings().maxCount(1),160));
@@ -71,6 +75,7 @@ public class ModItems {
         fabricItemGroupEntries.add(GARUINKA_STORAGE_BOTTLE);
         fabricItemGroupEntries.add(COGS);
         fabricItemGroupEntries.add(COPPER_NUGGET);
+        fabricItemGroupEntries.add(RESIN);
     }
     public static void addItemsToItemGroupNATURAL(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(ModBlocks.GARUINKA_MINERAL);
@@ -88,5 +93,6 @@ public class ModItems {
         fabricItemGroupEntries.add(GARUINKA);
         fabricItemGroupEntries.add(GARUINKA_COLLECTORS);
         fabricItemGroupEntries.add(GARUINKA_DETECTORS);
+        fabricItemGroupEntries.add(RESIN_SCYTHE);
     }
 }
