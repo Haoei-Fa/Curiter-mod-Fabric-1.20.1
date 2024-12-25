@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 
 public enum ModToolMaterial implements ToolMaterial {
 
-    IRONS(0, 128, 1F, 3.0F, 15, () -> Ingredient.ofItems(Items.IRON_INGOT));
+    IRONS(0, 128, 1F, 2.0F, 15, () -> Ingredient.ofItems(Items.IRON_INGOT));
 
     private final int miningLevel;
     private final int itemDurability;
