@@ -28,7 +28,7 @@ public class ModItems {
     public static final Item COPPER_NUGGET = registerItems("copper_nugget",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item RESIN = registerItems("resin",new Item(new FabricItemSettings().maxCount(64)));
 
-    public static final Item RESIN_SCYTHE = registerItems("resin_scythe",new RESIN_SCYTHE(ModToolMaterial.IRONS,0,10F,new FabricItemSettings()));
+    public static final Item RESIN_SCYTHE = registerItems("resin_scythe",new RESIN_SCYTHE(ModToolMaterial.IRONS,3,1F,new FabricItemSettings()));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",
             new MusicDiscItem(7, ModSounds.THE_PARADOX_OF_THEOREM_SEVEN,new FabricItemSettings().maxCount(1),160));

@@ -154,6 +154,11 @@ public class GARUINKA_COLLECTORS extends Item {
                     UseOnEndGaruinkaMineral(player, context.getWorld(), context.getBlockPos());
                     context.getStack().damage(-500-RollNumber1500(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
                 }
+                //对哭泣黑曜石使用
+                else if (BlockIsCryingObsidian(BlockState)){
+                    UseOnCryingObsidian(player, context.getWorld(), context.getBlockPos());
+                    context.getStack().damage(-10-RollNumber10(), context.getPlayer(), PlayerEntity -> PlayerEntity.sendToolBreakStatus(PlayerEntity.getActiveHand()));
+                }
             }
         }
 
@@ -389,6 +394,14 @@ public class GARUINKA_COLLECTORS extends Item {
         world.setBlockState(blockPos, blockState);
     }
 
+    private boolean BlockIsCryingObsidian(BlockState blockState){
+        return blockState.isOf(Blocks.CRYING_OBSIDIAN);
+    }
+    private void UseOnCryingObsidian(PlayerEntity player, World world, BlockPos blockPos) {
+        BlockState blockState = Blocks.OBSIDIAN.getDefaultState();
+        world.setBlockState(blockPos, blockState);
+    }
+
     private static int RollNumber3() {
         return Random.createLocal().nextInt(4);
     }
@@ -397,6 +410,9 @@ public class GARUINKA_COLLECTORS extends Item {
     }
     private static int RollNumber8(){
         return Random.createLocal().nextInt(9);
+    }
+    private static int RollNumber10(){
+        return Random.createLocal().nextInt(11);
     }
     private static int RollNumber15() {
         return Random.createLocal().nextInt(16);

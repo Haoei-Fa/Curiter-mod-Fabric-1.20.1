@@ -13,6 +13,7 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
+
 public class RESIN_SCYTHE extends SwordItem {
     public RESIN_SCYTHE(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, attackDamage, attackSpeed, settings);
@@ -61,4 +62,5 @@ public class RESIN_SCYTHE extends SwordItem {
         world.setBlockState(blockPos, blockState);
         player.giveItemStack(new ItemStack(ModItems.RESIN));
     }
+
 }
