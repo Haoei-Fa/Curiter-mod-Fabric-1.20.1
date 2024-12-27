@@ -29,7 +29,6 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RESIN, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA, Models.GENERATED);
-        itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_STORAGE_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_DETECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC, Models.GENERATED);
@@ -47,6 +46,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THE_CURITER_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_SUKATUO_MUSIC_DISC, Models.GENERATED);
 
+        itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RESIN_SCYTHE, Models.HANDHELD);
     }
 }

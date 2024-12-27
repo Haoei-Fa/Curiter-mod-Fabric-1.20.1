@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#AC",
+    "ABA",
+    "ADA"
+  ],
+  "key": {
+    "#": {
+      "item": "curiter:resin"
+    },
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:glass_pane"
+    },
+    "C": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "D": {
+      "item": "curiter:cogs"
+    }
+  },
+  "result": {
+    "item": "curiter:garuinka_detectors",
+    "count": 1
+  }
+}

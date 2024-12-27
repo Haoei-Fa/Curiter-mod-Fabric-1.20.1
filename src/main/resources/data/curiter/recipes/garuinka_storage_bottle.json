@@ -2,8 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "pattern": [
     " # ",
-    "# #",
-    "A#A"
+    "ABA"
   ],
   "key": {
     "#": {
@@ -11,10 +10,13 @@
     },
     "A": {
       "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "curiter:resin"
     }
   },
   "result": {
     "item": "curiter:garuinka_storage_bottle",
-    "count": 4
+    "count": 1
   }
 }

@@ -165,6 +165,18 @@ public class GARUINKA_COLLECTORS extends Item {
         return super.useOnBlock(context);
     }
 
+    //倒计时
+    int Glint_time;
+    @Override
+    public boolean hasGlint(ItemStack stack) {
+        if (stack.getDamage() == 0){
+            return true;
+        } else if (Glint_time > 0) {
+            return true;
+        }
+        else return false;
+    }
+
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
         List<AreaEffectCloudEntity> list = world.getEntitiesByClass(
@@ -173,6 +185,9 @@ public class GARUINKA_COLLECTORS extends Item {
                 entity -> entity != null && entity.isAlive() && entity.getOwner() instanceof EnderDragonEntity
         );
         if (!world.isClient()){
+            if (user.getStackInHand(hand).getDamage() != 0) {
+                Glint_time = 200;
+            }
                 if (!list.isEmpty()) {
                     //对龙息使用
                     if (user.getStackInHand(hand).getDamage() != 0){
@@ -204,6 +219,9 @@ public class GARUINKA_COLLECTORS extends Item {
     @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         if (!world.isClient()){
+            if (Glint_time > 0){
+                Glint_time--;
+            }
             timer++;
             if (stack.getDamage() != 0){
                 if(timer >= 200){
