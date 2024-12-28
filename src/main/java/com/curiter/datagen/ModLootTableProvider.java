@@ -12,5 +12,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.CURITER_BLOCK);
+        addDrop(ModBlocks.GARUINKA_EXTRACTORS);
     }
 }

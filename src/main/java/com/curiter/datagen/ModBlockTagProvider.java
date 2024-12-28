@@ -94,5 +94,12 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL)
                 .add(ModBlocks.NETHER_GARUINKA_MINERAL)
                 .add(ModBlocks.END_GARUINKA_MINERAL) ;
+
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+                .add(ModBlocks.GARUINKA_MINERAL)
+                .add(ModBlocks.DEEPSLATE_GARUINKA_MINERAL)
+                .add(ModBlocks.NETHER_GARUINKA_MINERAL)
+                .add(ModBlocks.END_GARUINKA_MINERAL)
+                .add(ModBlocks.GARUINKA_EXTRACTORS);
     }
 }

@@ -25,6 +25,8 @@ public class ModTags {
         }
     }
     public static class Items{
+        public static final TagKey<Item> CURITER_MUSIC_DISC = createTag("curiter_music_disc");
+
         public static TagKey<Item> createTag(String name){
             return TagKey.of(RegistryKeys.ITEM,new Identifier(CuriterMod.MOD_ID,name));
         }

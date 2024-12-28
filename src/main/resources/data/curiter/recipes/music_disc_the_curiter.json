@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "curiter:garuinka"
+    },
+    {
+      "item": "curiter:disc_empty"
+    }
+  ],
+  "result": {
+    "item": "curiter:the_curiter_music_disc",
+    "count": 1
+  }
+}

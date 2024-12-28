@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-28T05:12:09.7314715	Curiter Mod/Model Definitions
+// 1.20.1	2024-12-29T03:20:59.3551493	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 779e3a6f195e48e7618b990304b8c04cebb412fc assets\curiter\models\item\disc_empty.json
 8654f9471085240e81bdd9da3cf4cbf45e37aa53 assets\curiter\models\item\cogs.json
@@ -23,8 +23,8 @@ b897f0f88303302ab37194555ff4595373153a03 assets\curiter\blockstates\garuinka_min
 e8130f0fded437beb6cf84867d320081314ed0a8 assets\curiter\models\item\god_ghosts_and_dao_symbol_music_disc.json
 dd71497f6cb4e5c00c13bff395954397315b5378 assets\curiter\models\item\resin_scythe.json
 d3a107814e2544157f56afcbe0e56620ec64d924 assets\curiter\models\item\resin.json
-20f1d2d836c38ad2521ef4ef02c86b240f5c67f9 assets\curiter\blockstates\curiter_block.json
 9a57e529ed4f70eeea411b3f919f94dc1698b9f4 assets\curiter\blockstates\end_garuinka_mineral.json
+20f1d2d836c38ad2521ef4ef02c86b240f5c67f9 assets\curiter\blockstates\curiter_block.json
 638d1ebcae96bcdff8d7cd0f4b5d556f52bbc91e assets\curiter\models\item\garuinka_storage_bottle.json
 20bafd87ed240dc0aa1e688676cd0df50795b154 assets\curiter\models\item\garuinka.json
 ceb9bbbfbeabf00e2f136c7fe724068b6bf11ae2 assets\curiter\models\item\crashed_star_music_disc.json

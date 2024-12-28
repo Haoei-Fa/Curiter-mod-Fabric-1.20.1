@@ -15,16 +15,21 @@ import net.minecraft.util.Identifier;
 public class ModBlocks {
     public static final Block CURITER_BLOCK = registerBlocks("curiter_block",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE)));
+
     public static final Block GARUINKA_MINERAL = registerBlocks("garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.STONE).luminance(4)));
+
     public static final Block DEEPSLATE_GARUINKA_MINERAL = registerBlocks("deepslate_garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.DEEPSLATE).luminance(4)));
+
     public static final Block NETHER_GARUINKA_MINERAL = registerBlocks("nether_garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.NETHERRACK).luminance(4)));
+
     public static final Block END_GARUINKA_MINERAL = registerBlocks("end_garuinka_mineral",
             new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).luminance(4)));
+
     public static final Block GARUINKA_EXTRACTORS = registerBlocks("garuinka_extractors",
-            new GARUINKA_EXTRACTORS(FabricBlockSettings.copyOf(Blocks.STONE)));
+            new GARUINKA_EXTRACTORS(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
 
 
 
