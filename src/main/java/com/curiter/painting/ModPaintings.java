@@ -15,6 +15,8 @@ public class ModPaintings {
     public static final PaintingVariant HECHUWU1 = registerPainting("hechuwu1",new PaintingVariant(16,16));
     public static final PaintingVariant CURITER = registerPainting("curiter",new PaintingVariant(16,16));
     public static final PaintingVariant CURITER_NEW = registerPainting("curiter_new",new PaintingVariant(16,16));
+    public static final PaintingVariant SUNDAE = registerPainting("sundae",new PaintingVariant(16,16));
+    public static final PaintingVariant CANDY_STAR_PARADISE_PAINTING = registerPainting("candy_star_paradise_painting",new PaintingVariant(48,48));
 
     private static PaintingVariant registerPainting(String name,PaintingVariant paintingVariant){
         return Registry.register(Registries.PAINTING_VARIANT,new Identifier(CuriterMod.MOD_ID,name),paintingVariant);
