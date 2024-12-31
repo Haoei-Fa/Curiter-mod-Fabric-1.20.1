@@ -1,4 +1,4 @@
-// 1.20.1	2024-12-29T03:20:59.3540149	Curiter Mod/Tags for minecraft:block
+// 1.20.1	2025-01-01T03:25:09.2551664	Curiter Mod/Tags for minecraft:block
 6d062836fd94aad925b2de6eec5815e433e1ad4c data\curiter\tags\blocks\saplings_list.json
 25c5846e411731749da79a360ebd2cfd9a46f360 data\curiter\tags\blocks\garuinka_minerals.json
 573b2d651755520e56a08e97362698a172cf2598 data\curiter\tags\blocks\flowers_list.json
@@ -6,7 +6,7 @@ e5b25d989d7621dbc1e28951907bad741a251482 data\minecraft\tags\blocks\mineable\pic
 49c19e49be98f8e14764acd0c837ab04050bf4db data\curiter\tags\blocks\dirt_list.json
 302bfedab75458d76a6045c413a561cd939c0ae3 data\curiter\tags\blocks\sculk_blocks_list.json
 c9a0fa2b480198219c3eaf0a6232213c6a8fed16 data\curiter\tags\blocks\leaves_list.json
-cd9c8c977af4d3283961360c7ff039d2cf67cff1 data\curiter\tags\blocks\mushrooms_list.json
 7be5722b9892035fbf886684062476c9174d4875 data\curiter\tags\blocks\other_plants_list.json
+cd9c8c977af4d3283961360c7ff039d2cf67cff1 data\curiter\tags\blocks\mushrooms_list.json
 af5c9ad633137de68e4f1718366309e9c12a9e87 data\curiter\tags\blocks\grass_list.json
 1f4e95f9217802a5f59cd35c4593eef274ffc15d data\curiter\tags\blocks\nether_racks_list.json

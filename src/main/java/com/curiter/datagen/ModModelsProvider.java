@@ -32,7 +32,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.GARUINKA_STORAGE_BOTTLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.GARUINKA_DETECTORS, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC, Models.GENERATED);
-        itemModelGenerator.register(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLACK_BLOOD_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.BLOOD_FALSEHOOD_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.CANDY_STAR_PARADISE_MUSIC_DISC, Models.GENERATED);
@@ -45,6 +45,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_CURITER_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_SUKATUO_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FRIED_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.PURPLE_EGG, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RESIN_SCYTHE, Models.HANDHELD);

@@ -30,7 +30,7 @@ public class ModItemGroups {
                 entries.add(ModBlocks.END_GARUINKA_MINERAL);
                 entries.add(ModBlocks.GARUINKA_EXTRACTORS);
                 entries.add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC);
-                entries.add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC);
+                entries.add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC);
                 entries.add(ModItems.BLACK_BLOOD_MUSIC_DISC);
                 entries.add(ModItems.BLOOD_FALSEHOOD_MUSIC_DISC);
                 entries.add(ModItems.CANDY_STAR_PARADISE_MUSIC_DISC);
@@ -43,6 +43,8 @@ public class ModItemGroups {
                 entries.add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC);
                 entries.add(ModItems.THE_CURITER_MUSIC_DISC);
                 entries.add(ModItems.THE_SUKATUO_MUSIC_DISC);
+                entries.add(ModItems.FRIED_EGG);
+                entries.add(ModItems.PURPLE_EGG);
             }).build());
 
     public static final ItemGroup CURITER_MUSIC_DISC = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_music_disc"),
@@ -51,7 +53,7 @@ public class ModItemGroups {
                     entries((displayContext, entries) -> {
                         entries.add(ModItems.DISC_EMPTY);
                         entries.add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC);
-                        entries.add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC);
+                        entries.add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC);
                         entries.add(ModItems.BLACK_BLOOD_MUSIC_DISC);
                         entries.add(ModItems.BLOOD_FALSEHOOD_MUSIC_DISC);
                         entries.add(ModItems.CANDY_STAR_PARADISE_MUSIC_DISC);
@@ -64,6 +66,14 @@ public class ModItemGroups {
                         entries.add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC);
                         entries.add(ModItems.THE_CURITER_MUSIC_DISC);
                         entries.add(ModItems.THE_SUKATUO_MUSIC_DISC);
+                    }).build());
+
+    public static final ItemGroup CURITER_FOOD = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_food"),
+            FabricItemGroup.builder().displayName(Text.translatable("itemGroup.curiter_food"))
+                    .icon(() -> new ItemStack(ModItems.FRIED_EGG)).
+                    entries((displayContext, entries) -> {
+                        entries.add(ModItems.FRIED_EGG);
+                        entries.add(ModItems.PURPLE_EGG);
                     }).build());
 
     public static void registerModItemGroups(){

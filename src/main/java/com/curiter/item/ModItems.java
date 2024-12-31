@@ -2,10 +2,7 @@ package com.curiter.item;
 
 import com.curiter.CuriterMod;
 import com.curiter.block.ModBlocks;
-import com.curiter.item.custom.GARUINKA;
-import com.curiter.item.custom.GARUINKA_COLLECTORS;
-import com.curiter.item.custom.GARUINKA_DETECTORS;
-import com.curiter.item.custom.RESIN_SCYTHE;
+import com.curiter.item.custom.*;
 import com.curiter.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
@@ -28,6 +25,10 @@ public class ModItems {
     public static final Item COPPER_NUGGET = registerItems("copper_nugget",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item RESIN = registerItems("resin",new Item(new FabricItemSettings().maxCount(64)));
 
+    public static final Item FRIED_EGG = registerItems("fried_egg",new Item(new FabricItemSettings().food(ModFoodComponents.FRIED_EGG).maxCount(64)));
+    public static final Item PURPLE_EGG = registerItems("purple_egg",new PURPLE_EGG(new FabricItemSettings().food(ModFoodComponents.PURPLE_EGG).maxCount(64)));
+
+
     public static final Item RESIN_SCYTHE = registerItems("resin_scythe",new RESIN_SCYTHE(ModToolMaterial.IRONS,3,1F,new FabricItemSettings()));
 
     public static final Item THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC = registerItems("the_paradox_of_theorem_seven_music_disc",
@@ -36,7 +37,7 @@ public class ModItems {
             new MusicDiscItem(5, ModSounds.CANDY_STAR_PARADISE,new FabricItemSettings().maxCount(1),235));
     public static final Item BLACK_BLOOD_MUSIC_DISC = registerItems("black_blood_music_disc",
             new MusicDiscItem(2, ModSounds.BLACK_BLOOD,new FabricItemSettings().maxCount(1),265));
-    public static final Item ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC = registerItems("ancient_castle_under_the_blood_moon_music_disc",
+    public static final Item ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC = registerItems("ancient_castle_under_the_blood_moon_music_disc",
             new MusicDiscItem(3, ModSounds.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON,new FabricItemSettings().maxCount(1),295));
     public static final Item EVANESCENT_STAR_MUSIC_DISC = registerItems("evanescent_star_music_disc",
             new MusicDiscItem(9, ModSounds.EVANESCENT_STAR,new FabricItemSettings().maxCount(1),165));
@@ -68,6 +69,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(ModItems::addItemsToItemGroupOPERATOR);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(ModItems::addItemsToItemGroupFUNCTIONAL);
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(ModItems::addItemsToItemGroupTOOLS);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrink);
     }
     public static void addItemsToItemGroupINGREDIENTS(FabricItemGroupEntries fabricItemGroupEntries){
         fabricItemGroupEntries.add(GARUINKA);
@@ -94,5 +96,9 @@ public class ModItems {
         fabricItemGroupEntries.add(GARUINKA_COLLECTORS);
         fabricItemGroupEntries.add(GARUINKA_DETECTORS);
         fabricItemGroupEntries.add(RESIN_SCYTHE);
+    }
+    public static void addItemsToFoodAndDrink(FabricItemGroupEntries fabricItemGroupEntries){
+        fabricItemGroupEntries.add(FRIED_EGG);
+        fabricItemGroupEntries.add(PURPLE_EGG);
     }
 }

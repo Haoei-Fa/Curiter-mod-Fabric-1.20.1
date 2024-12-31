@@ -18,7 +18,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.CURITER_MUSIC_DISC)
                 .add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC)
-                .add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC)
+                .add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC)
                 .add(ModItems.BLACK_BLOOD_MUSIC_DISC)
                 .add(ModItems.BLOOD_FALSEHOOD_MUSIC_DISC)
                 .add(ModItems.CANDY_STAR_PARADISE_MUSIC_DISC)
@@ -34,7 +34,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC)
-                .add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOOND_MUSIC_DISC)
+                .add(ModItems.ANCIENT_CASTLE_UNDER_THE_BLOOD_MOON_MUSIC_DISC)
                 .add(ModItems.BLACK_BLOOD_MUSIC_DISC)
                 .add(ModItems.BLOOD_FALSEHOOD_MUSIC_DISC)
                 .add(ModItems.CANDY_STAR_PARADISE_MUSIC_DISC)
