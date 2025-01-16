@@ -50,5 +50,6 @@ public class ModModelsProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RESIN_SCYTHE, Models.HANDHELD);
+        itemModelGenerator.register(ModItems.FRENCH_STICK, Models.HANDHELD);
     }
 }
