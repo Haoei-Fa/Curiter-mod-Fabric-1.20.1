@@ -47,6 +47,10 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.THE_SUKATUO_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURPLE_EGG, Models.GENERATED);
+        itemModelGenerator.register(ModItems.DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FERMENTED_DOUGH, Models.GENERATED);
+        itemModelGenerator.register(ModItems.YEAST, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FLOUR, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RESIN_SCYTHE, Models.HANDHELD);

@@ -1,9 +1,11 @@
-// 1.20.1	2025-01-02T18:54:12.0636669	Curiter Mod/Model Definitions
+// 1.20.1	2025-01-17T12:20:03.8535833	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 8c520d24f6f6221c2fb294aeafd5bbbef9e37701 assets\curiter\models\item\fried_egg.json
 779e3a6f195e48e7618b990304b8c04cebb412fc assets\curiter\models\item\disc_empty.json
 8654f9471085240e81bdd9da3cf4cbf45e37aa53 assets\curiter\models\item\cogs.json
 aa84d4f329db3101b599e76018b71a5935bdb65c assets\curiter\models\block\nether_garuinka_mineral.json
+c51224cbb1f018391999dae38d3a9fec2624a757 assets\curiter\models\item\flour.json
+5ce09b40120f0e9df2f38f36fdd36119eb7f4983 assets\curiter\models\item\fermented_dough.json
 cdeaa5e2273b3abd7e6cba62074c95786d1961e1 assets\curiter\models\item\candy_star_paradise_music_disc.json
 1c959c94a9c3ced43d8913d9b44d65562d2b9ad7 assets\curiter\models\item\gravitational_equilibrium_music_disc.json
 1b721efc95ee9b01088828cc93351bba38fd473b assets\curiter\models\block\curiter_block.json
@@ -12,6 +14,7 @@ b750050c297b601f6162a05ae701db20954d55ce assets\curiter\blockstates\garuinka_ext
 ccd93be2989c6ce85df162c8de5dbf8a11abc6c8 assets\curiter\models\item\the_sukatuo_music_disc.json
 6663175f9ea1b65b53d4e6d17f690417dab01ade assets\curiter\models\item\blood_falsehood_music_disc.json
 e9980a0ff1c0bca09125f50c2812380899a4bc65 assets\curiter\models\item\the_curiter_music_disc.json
+3ccd23436c33b8299a3820a180dbe5a3070575d8 assets\curiter\models\item\yeast.json
 c09fa373c4ac99626cb35f1eb71e96ab096da123 assets\curiter\models\item\copper_nugget.json
 f131f5d6798b59619b81dbc4daa75275b13bfcfa assets\curiter\models\block\garuinka_mineral.json
 2e581193595d8663ed71ded67a28556afd58fbbf assets\curiter\models\item\sleeping_atlantis_music_disc.json
@@ -24,8 +27,9 @@ b897f0f88303302ab37194555ff4595373153a03 assets\curiter\blockstates\garuinka_min
 e8130f0fded437beb6cf84867d320081314ed0a8 assets\curiter\models\item\god_ghosts_and_dao_symbol_music_disc.json
 dd71497f6cb4e5c00c13bff395954397315b5378 assets\curiter\models\item\resin_scythe.json
 d3a107814e2544157f56afcbe0e56620ec64d924 assets\curiter\models\item\resin.json
-20f1d2d836c38ad2521ef4ef02c86b240f5c67f9 assets\curiter\blockstates\curiter_block.json
+a9042763ffbca71ab60ce62fb081bd9f49a47662 assets\curiter\models\item\dough.json
 9a57e529ed4f70eeea411b3f919f94dc1698b9f4 assets\curiter\blockstates\end_garuinka_mineral.json
+20f1d2d836c38ad2521ef4ef02c86b240f5c67f9 assets\curiter\blockstates\curiter_block.json
 638d1ebcae96bcdff8d7cd0f4b5d556f52bbc91e assets\curiter\models\item\garuinka_storage_bottle.json
 20bafd87ed240dc0aa1e688676cd0df50795b154 assets\curiter\models\item\garuinka.json
 64e46b5ed6f95af828764e1d12b71d6d4ed1396f assets\curiter\models\item\purple_egg.json

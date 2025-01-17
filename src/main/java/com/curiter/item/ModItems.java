@@ -24,6 +24,10 @@ public class ModItems {
     public static final Item COGS = registerItems("cogs",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item COPPER_NUGGET = registerItems("copper_nugget",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item RESIN = registerItems("resin",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item FLOUR = registerItems("flour",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item DOUGH = registerItems("dough",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item FERMENTED_DOUGH = registerItems("fermented_dough",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item YEAST = registerItems("yeast",new Item(new FabricItemSettings().maxCount(64)));
 
     public static final Item FRIED_EGG = registerItems("fried_egg",new Item(new FabricItemSettings().food(ModFoodComponents.FRIED_EGG).maxCount(64)));
     public static final Item PURPLE_EGG = registerItems("purple_egg",new PURPLE_EGG(new FabricItemSettings().food(ModFoodComponents.PURPLE_EGG).maxCount(64)));
