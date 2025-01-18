@@ -1,6 +1,6 @@
 package com.curiter.block.custom;
 
-import com.curiter.block.entity.GaruinkaExtractorsBlockEntity;
+import com.curiter.block.entity.MillBlockEntity;
 import com.curiter.block.entity.ModBlockEntities;
 import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockRenderType;
@@ -19,8 +19,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class GARUINKA_EXTRACTORS extends BlockWithEntity implements BlockEntityProvider {
-    public GARUINKA_EXTRACTORS(Settings settings) {
+public class MILL extends BlockWithEntity implements BlockEntityProvider {
+    public MILL(Settings settings) {
         super(settings);
     }
 
@@ -32,15 +32,15 @@ public class GARUINKA_EXTRACTORS extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public BlockEntity createBlockEntity(BlockPos pos, BlockState state) {
-        return new GaruinkaExtractorsBlockEntity(pos, state);
+        return new MillBlockEntity(pos, state);
     }
 
     @Override
     public void onStateReplaced(BlockState state, World world, BlockPos pos, BlockState newState, boolean moved) {
         if (state.getBlock() != newState.getBlock()) {
             BlockEntity blockEntity = world.getBlockEntity(pos);
-            if (blockEntity instanceof GaruinkaExtractorsBlockEntity) {
-                ItemScatterer.spawn(world, pos, (GaruinkaExtractorsBlockEntity)blockEntity);
+            if (blockEntity instanceof MillBlockEntity) {
+                ItemScatterer.spawn(world, pos, (MillBlockEntity)blockEntity);
                 world.updateComparators(pos,this);
             }
             super.onStateReplaced(state, world, pos, newState, moved);
@@ -50,7 +50,7 @@ public class GARUINKA_EXTRACTORS extends BlockWithEntity implements BlockEntityP
     @Override
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if (!world.isClient) {
-            NamedScreenHandlerFactory screenHandlerFactory = ((GaruinkaExtractorsBlockEntity) world.getBlockEntity(pos));
+            NamedScreenHandlerFactory screenHandlerFactory = ((MillBlockEntity) world.getBlockEntity(pos));
 
             if (screenHandlerFactory != null) {
                 player.openHandledScreen(screenHandlerFactory);
@@ -63,7 +63,7 @@ public class GARUINKA_EXTRACTORS extends BlockWithEntity implements BlockEntityP
     @Nullable
     @Override
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(World world, BlockState state, BlockEntityType<T> type) {
-        return checkType(type, ModBlockEntities.GARUINKA_EXTRACTORS_BLOCK_ENTITY,
+        return checkType(type, ModBlockEntities.MILL_BLOCK_ENTITY,
                 (world1, pos, state1, blockEntity) -> blockEntity.tick(world1, pos, state1));
     }
 }

@@ -13,6 +13,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(CuriterMod.MOD_ID, "garuinka_extractors_block_entity"),
                     FabricBlockEntityTypeBuilder.create(GaruinkaExtractorsBlockEntity::new,
                             ModBlocks.GARUINKA_EXTRACTORS).build());
+    public static final BlockEntityType<MillBlockEntity> MILL_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(CuriterMod.MOD_ID, "mill_block_entity"),
+                    FabricBlockEntityTypeBuilder.create(MillBlockEntity::new,
+                            ModBlocks.MILL).build());
 
     public static void registerBlockEntities() {
     }

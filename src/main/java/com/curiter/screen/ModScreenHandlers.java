@@ -11,6 +11,10 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<GaruinkaExtractorsScreenHandler> GARUINKA_EXTRACTORS_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER,new Identifier(CuriterMod.MOD_ID,"garuinka_extractors"),
                     new ExtendedScreenHandlerType<>(GaruinkaExtractorsScreenHandler::new));
+    public static final ScreenHandlerType<MillScreenHandler> MILL_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER,new Identifier(CuriterMod.MOD_ID,"mill"),
+                    new ExtendedScreenHandlerType<>(MillScreenHandler::new));
+
     public static void registerScreenHandlers(){
 
     }

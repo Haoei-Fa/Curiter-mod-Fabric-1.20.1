@@ -2,6 +2,7 @@ package com.curiter.block.entity;
 
 import com.curiter.item.ModItems;
 import com.curiter.screen.GaruinkaExtractorsScreenHandler;
+import com.curiter.screen.MillScreenHandler;
 import net.fabricmc.fabric.api.screenhandler.v1.ExtendedScreenHandlerFactory;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -10,6 +11,7 @@ import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.screen.PropertyDelegate;
@@ -21,26 +23,25 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class GaruinkaExtractorsBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory,ImplementedInventory{
-    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(3,ItemStack.EMPTY);
+public class MillBlockEntity extends BlockEntity implements ExtendedScreenHandlerFactory,ImplementedInventory{
+    private final DefaultedList<ItemStack> inventory = DefaultedList.ofSize(2,ItemStack.EMPTY);
 
-    private static final int INPUT_SLOT_1 = 0;
-    private static final int INPUT_SLOT_2 = 1;
-    private static final int OUTPUT_SLOT = 2;
+    private static final int INPUT_SLOT = 0;
+    private static final int OUTPUT_SLOT = 1;
 
     protected final PropertyDelegate propertyDelegate;
     private int progress = 0;
 
-    private int maxProgress = 6000;
+    private int maxProgress = 120;
 
-    public GaruinkaExtractorsBlockEntity(BlockPos pos, BlockState state) {
-        super(ModBlockEntities.GARUINKA_EXTRACTORS_BLOCK_ENTITY, pos, state);
+    public MillBlockEntity(BlockPos pos, BlockState state) {
+        super(ModBlockEntities.MILL_BLOCK_ENTITY, pos, state);
         this.propertyDelegate = new PropertyDelegate() {
             @Override
             public int get(int index) {
                 return switch (index){
-                    case 0 -> GaruinkaExtractorsBlockEntity.this.progress;
-                    case 1 -> GaruinkaExtractorsBlockEntity.this.maxProgress;
+                    case 0 -> MillBlockEntity.this.progress;
+                    case 1 -> MillBlockEntity.this.maxProgress;
                     default -> 0;
                 };
             }
@@ -48,8 +49,8 @@ public class GaruinkaExtractorsBlockEntity extends BlockEntity implements Extend
             @Override
             public void set(int index, int value) {
                 switch (index){
-                    case 0 -> GaruinkaExtractorsBlockEntity.this.progress = value;
-                    case 1 -> GaruinkaExtractorsBlockEntity.this.maxProgress = value;
+                    case 0 -> MillBlockEntity.this.progress = value;
+                    case 1 -> MillBlockEntity.this.maxProgress = value;
                 }
             }
 
@@ -72,27 +73,27 @@ public class GaruinkaExtractorsBlockEntity extends BlockEntity implements Extend
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("garuinka_extractors_gui_name");
+        return Text.translatable("mill_gui_name");
     }
 
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory playerInventory, PlayerEntity player) {
-        return new GaruinkaExtractorsScreenHandler(syncId,playerInventory,this,this.propertyDelegate);
+        return new MillScreenHandler(syncId,playerInventory,this,this.propertyDelegate);
     }
 
     @Override
     protected void writeNbt(NbtCompound nbt) {
         super.writeNbt(nbt);
         Inventories.writeNbt(nbt,inventory);
-        nbt.putInt("garuinka_extractors",progress);
+        nbt.putInt("mill",progress);
     }
 
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
         Inventories.readNbt(nbt,inventory);
-        progress = nbt.getInt("garuinka_extractors");
+        progress = nbt.getInt("mill");
     }
 
     public void tick(World world1, BlockPos pos, BlockState state1) {
@@ -100,7 +101,7 @@ public class GaruinkaExtractorsBlockEntity extends BlockEntity implements Extend
             return;
         }
         if (isOutputSlotAvailable()){
-            if (this.hsaRecipe() && getStack(INPUT_SLOT_1).getDamage() <= 7500){
+            if (this.hsaRecipe()){
                 this.increaseCraftProgress();
                 markDirty(world1,pos,state1);
 
@@ -122,10 +123,8 @@ public class GaruinkaExtractorsBlockEntity extends BlockEntity implements Extend
     }
 
     private void craftItem() {
-        this.getStack(INPUT_SLOT_1).setDamage(getStack(INPUT_SLOT_1).getDamage()+2500);
-        this.removeStack(INPUT_SLOT_2,1);
-        ItemStack result = new ItemStack(ModItems.GARUINKA);
-
+        this.removeStack(INPUT_SLOT,1);
+        ItemStack result = new ItemStack(ModItems.FLOUR);
         this.setStack(OUTPUT_SLOT,new ItemStack(result.getItem(),getStack(OUTPUT_SLOT).getCount() + result.getCount()));
     }
 
@@ -138,8 +137,8 @@ public class GaruinkaExtractorsBlockEntity extends BlockEntity implements Extend
     }
 
     private boolean hsaRecipe() {
-        ItemStack result = new ItemStack(ModItems.GARUINKA);
-        boolean hasInput = getStack(INPUT_SLOT_1).getItem() == ModItems.GARUINKA_COLLECTORS && getStack(INPUT_SLOT_2).getItem() == ModItems.GARUINKA_STORAGE_BOTTLE;
+        ItemStack result = new ItemStack(ModItems.FLOUR);
+        boolean hasInput = getStack(INPUT_SLOT).getItem() == Items.WHEAT;
 
         return hasInput && canInsertAmountIntoOutputSlot(result) && canInsertItemIntoOutputSlot(result.getItem());
     }

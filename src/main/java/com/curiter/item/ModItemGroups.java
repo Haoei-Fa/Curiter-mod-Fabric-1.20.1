@@ -50,6 +50,7 @@ public class ModItemGroups {
                 entries.add(ModItems.FERMENTED_DOUGH);
                 entries.add(ModItems.YEAST);
                 entries.add(ModItems.FLOUR);
+                entries.add(ModBlocks.MILL);
             }).build());
 
     public static final ItemGroup CURITER_MUSIC_DISC = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_music_disc"),
