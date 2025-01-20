@@ -42,8 +42,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIMENSION_CABINET_MUSIC_DISC)
                 .add(ModItems.EVANESCENT_STAR_MUSIC_DISC)
                 .add(ModItems.GOD_GHOSTS_AND_DAO_SYMBOL_MUSIC_DISC)
-                .add(ModItems.GRAVITATIONAL_EQUILIBRIUM_MUSIC_DISC)
-                .add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC);
+                .add(ModItems.GRAVITATIONAL_EQUILIBRIUM_MUSIC_DISC);
 
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).addTag(ModTags.Items.CURITER_MUSIC_DISC);
