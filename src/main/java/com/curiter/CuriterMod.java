@@ -7,6 +7,7 @@ import com.curiter.item.ModItems;
 import com.curiter.painting.ModPaintings;
 import com.curiter.sounds.ModSounds;
 import com.curiter.util.ModLootTableModifiers;
+import com.curiter.util.ModTrades;
 import com.curiter.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
@@ -28,5 +29,6 @@ public class CuriterMod implements ModInitializer {
 		ModBlockEntities.registerBlockEntities();
 		ModPaintings.resisterPaintings();
 		ModLootTableModifiers.modifierLootTables();
+		ModTrades.registerTrades();
 	}
 }
