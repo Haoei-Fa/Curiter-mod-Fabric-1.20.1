@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "curiter:item/new_the_clock_tower_travel_music_disc"
+  }
+}

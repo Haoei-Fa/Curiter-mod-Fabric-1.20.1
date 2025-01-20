@@ -124,5 +124,23 @@
         "stream": false
       }
     ]
+  },
+  "the_clock_tower_travel":
+  {"subtitle": "sounds.curiter.the_clock_tower_travel",
+    "sounds": [
+      {
+        "name": "curiter:the_clock_tower_travel",
+        "stream": false
+      }
+    ]
+  },
+  "new_the_clock_tower_travel":
+  {"subtitle": "sounds.curiter.new_the_clock_tower_travel",
+    "sounds": [
+      {
+        "name": "curiter:new_the_clock_tower_travel",
+        "stream": false
+      }
+    ]
   }
 }

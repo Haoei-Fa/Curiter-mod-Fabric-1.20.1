@@ -46,6 +46,8 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_CURITER_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.THE_SUKATUO_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC, Models.GENERATED);
         itemModelGenerator.register(ModItems.FRIED_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.PURPLE_EGG, Models.GENERATED);
         itemModelGenerator.register(ModItems.DOUGH, Models.GENERATED);

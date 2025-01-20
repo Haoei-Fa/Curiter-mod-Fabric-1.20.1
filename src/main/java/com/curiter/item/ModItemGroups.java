@@ -43,6 +43,8 @@ public class ModItemGroups {
                 entries.add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC);
                 entries.add(ModItems.THE_CURITER_MUSIC_DISC);
                 entries.add(ModItems.THE_SUKATUO_MUSIC_DISC);
+                entries.add(ModItems.THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
+                entries.add(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
                 entries.add(ModItems.FRIED_EGG);
                 entries.add(ModItems.PURPLE_EGG);
                 entries.add(ModItems.FRENCH_STICK);
@@ -72,6 +74,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC);
                         entries.add(ModItems.THE_CURITER_MUSIC_DISC);
                         entries.add(ModItems.THE_SUKATUO_MUSIC_DISC);
+                        entries.add(ModItems.THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
+                        entries.add(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
                     }).build());
 
     public static final ItemGroup CURITER_FOOD = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_food"),

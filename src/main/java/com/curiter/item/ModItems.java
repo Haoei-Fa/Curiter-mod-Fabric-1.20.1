@@ -63,6 +63,11 @@ public class ModItems {
             new MusicDiscItem(6, ModSounds.GLITCH_ART,new FabricItemSettings().maxCount(1),210));
     public static final Item THE_SUKATUO_MUSIC_DISC = registerItems("the_sukatuo_music_disc",
             new MusicDiscItem(1, ModSounds.THE_SUKATUO,new FabricItemSettings().maxCount(1),195));
+    public static final Item THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC = registerItems("the_clock_tower_travel_music_disc",
+            new MusicDiscItem(12, ModSounds.THE_CLOCK_TOWER_TRAVEL,new FabricItemSettings().maxCount(1),185));
+    public static final Item NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC = registerItems("new_the_clock_tower_travel_music_disc",
+            new MusicDiscItem(12, ModSounds.NEW_THE_CLOCK_TOWER_TRAVEL,new FabricItemSettings().maxCount(1),185));
+
 
     private static Item registerItems(String name,Item item){
         return Registry.register(Registries.ITEM,new Identifier(CuriterMod.MOD_ID,name),item);

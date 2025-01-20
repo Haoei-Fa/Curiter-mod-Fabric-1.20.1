@@ -1,4 +1,4 @@
-// 1.20.1	2025-01-20T23:55:12.8582823	Curiter Mod/Model Definitions
+// 1.20.1	2025-01-21T03:01:43.8958866	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 8c520d24f6f6221c2fb294aeafd5bbbef9e37701 assets\curiter\models\item\fried_egg.json
 779e3a6f195e48e7618b990304b8c04cebb412fc assets\curiter\models\item\disc_empty.json
@@ -35,9 +35,11 @@ a9042763ffbca71ab60ce62fb081bd9f49a47662 assets\curiter\models\item\dough.json
 20bafd87ed240dc0aa1e688676cd0df50795b154 assets\curiter\models\item\garuinka.json
 64e46b5ed6f95af828764e1d12b71d6d4ed1396f assets\curiter\models\item\purple_egg.json
 ceb9bbbfbeabf00e2f136c7fe724068b6bf11ae2 assets\curiter\models\item\crashed_star_music_disc.json
+5a45ee32b23bc19082daf71898c5a5b9749c4f8c assets\curiter\models\item\the_clock_tower_travel_music_disc.json
 ce1c63e9576380dab61c466d0d013a2d800f9c54 assets\curiter\models\block\mill.json
 6ffc08c55880fe7220a701657e304c5e0f49c173 assets\curiter\models\item\dimension_cabinet_music_disc.json
 033f68d19049ed9dafe1585758bc78c53076b03f assets\curiter\models\item\the_paradox_of_theorem_seven_music_disc.json
+dc98045485348f56758464670a22aee8ab79f304 assets\curiter\models\item\new_the_clock_tower_travel_music_disc.json
 3f60f4bb0f6e5905a780d10fdbc52f0af5a6d81e assets\curiter\models\item\black_blood_music_disc.json
 26ba74a1e179d37ad8db061fe77cbab44cb34cc1 assets\curiter\models\item\glitch_art_music_disc.json
 2b8cfd583360d69b448a63319817f2f7f980914e assets\curiter\models\item\french_stick.json

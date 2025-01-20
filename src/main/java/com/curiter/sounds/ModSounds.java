@@ -21,6 +21,8 @@ public class ModSounds {
     public static final SoundEvent GOD_GHOSTS_AND_DAO_SYMBOL = registerSoundEvents("god_ghosts_and_dao_symbol");
     public static final SoundEvent GLITCH_ART = registerSoundEvents("glitch_art");
     public static final SoundEvent THE_SUKATUO = registerSoundEvents("the_sukatuo");
+    public static final SoundEvent THE_CLOCK_TOWER_TRAVEL = registerSoundEvents("the_clock_tower_travel");
+    public static final SoundEvent NEW_THE_CLOCK_TOWER_TRAVEL = registerSoundEvents("new_the_clock_tower_travel");
 
     public static SoundEvent registerSoundEvents(String name){
         Identifier identifier = new Identifier(CuriterMod.MOD_ID,name);

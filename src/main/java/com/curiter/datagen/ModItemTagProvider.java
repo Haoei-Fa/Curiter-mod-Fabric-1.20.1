@@ -30,7 +30,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.GRAVITATIONAL_EQUILIBRIUM_MUSIC_DISC)
                 .add(ModItems.SLEEPING_ATLANTIS_MUSIC_DISC)
                 .add(ModItems.THE_CURITER_MUSIC_DISC)
-                .add(ModItems.THE_SUKATUO_MUSIC_DISC);
+                .add(ModItems.THE_SUKATUO_MUSIC_DISC)
+                .add(ModItems.THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC)
+                .add(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
 
         getOrCreateTagBuilder(ItemTags.CREEPER_DROP_MUSIC_DISCS)
                 .add(ModItems.THE_PARADOX_OF_THEOREM_SEVEN_MUSIC_DISC)
@@ -42,7 +44,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.DIMENSION_CABINET_MUSIC_DISC)
                 .add(ModItems.EVANESCENT_STAR_MUSIC_DISC)
                 .add(ModItems.GOD_GHOSTS_AND_DAO_SYMBOL_MUSIC_DISC)
-                .add(ModItems.GRAVITATIONAL_EQUILIBRIUM_MUSIC_DISC);
+                .add(ModItems.GRAVITATIONAL_EQUILIBRIUM_MUSIC_DISC)
+                .add(ModItems.THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC)
+                .add(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
 
 
         getOrCreateTagBuilder(ItemTags.MUSIC_DISCS).addTag(ModTags.Items.CURITER_MUSIC_DISC);
