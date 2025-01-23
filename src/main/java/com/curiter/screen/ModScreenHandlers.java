@@ -14,6 +14,9 @@ public class ModScreenHandlers {
     public static final ScreenHandlerType<MillScreenHandler> MILL_SCREEN_HANDLER =
             Registry.register(Registries.SCREEN_HANDLER,new Identifier(CuriterMod.MOD_ID,"mill"),
                     new ExtendedScreenHandlerType<>(MillScreenHandler::new));
+    public static final ScreenHandlerType<PetriDishScreenHandler> PETRI_DISH_SCREEN_HANDLER =
+            Registry.register(Registries.SCREEN_HANDLER,new Identifier(CuriterMod.MOD_ID,"petri_dish"),
+                    new ExtendedScreenHandlerType<>(PetriDishScreenHandler::new));
 
     public static void registerScreenHandlers(){
 

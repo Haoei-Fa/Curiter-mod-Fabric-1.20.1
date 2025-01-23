@@ -3,6 +3,7 @@ package com.curiter.block;
 import com.curiter.CuriterMod;
 import com.curiter.block.custom.GARUINKA_EXTRACTORS;
 import com.curiter.block.custom.MILL;
+import com.curiter.block.custom.PETRI_DISH;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
@@ -33,6 +34,8 @@ public class ModBlocks {
             new GARUINKA_EXTRACTORS(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
     public static final Block MILL = registerBlocks("mill",
             new MILL(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
+    public static final Block PETRI_DISH = registerBlocks("petri_dish",
+            new PETRI_DISH(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
 
 
 

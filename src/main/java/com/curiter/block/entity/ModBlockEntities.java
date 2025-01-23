@@ -17,6 +17,10 @@ public class ModBlockEntities {
             Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(CuriterMod.MOD_ID, "mill_block_entity"),
                     FabricBlockEntityTypeBuilder.create(MillBlockEntity::new,
                             ModBlocks.MILL).build());
+    public static final BlockEntityType<PetriDishBlockEntity> PETRI_DISH_BLOCK_ENTITY =
+            Registry.register(Registries.BLOCK_ENTITY_TYPE, new Identifier(CuriterMod.MOD_ID, "petri_dish_block_entity"),
+                    FabricBlockEntityTypeBuilder.create(PetriDishBlockEntity::new,
+                            ModBlocks.PETRI_DISH).build());
 
     public static void registerBlockEntities() {
     }
