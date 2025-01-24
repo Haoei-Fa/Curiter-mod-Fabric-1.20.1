@@ -32,10 +32,12 @@ public class ModBlocks {
 
     public static final Block GARUINKA_EXTRACTORS = registerBlocks("garuinka_extractors",
             new GARUINKA_EXTRACTORS(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
+
     public static final Block MILL = registerBlocks("mill",
             new MILL(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
+
     public static final Block PETRI_DISH = registerBlocks("petri_dish",
-            new PETRI_DISH(FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));
+            new PETRI_DISH(FabricBlockSettings.copyOf(Blocks.GLASS).nonOpaque()));
 
 
 

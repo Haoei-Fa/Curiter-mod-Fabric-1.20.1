@@ -7,12 +7,15 @@ import com.curiter.sounds.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.MusicDiscItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
+import static net.minecraft.item.Items.register;
 
 public class ModItems {
     public static final Item GARUINKA_STORAGE_BOTTLE = registerItems("garuinka_storage_bottle",new Item(new FabricItemSettings().maxCount(16)));
@@ -28,6 +31,8 @@ public class ModItems {
     public static final Item DOUGH = registerItems("dough",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item FERMENTED_DOUGH = registerItems("fermented_dough",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item YEAST = registerItems("yeast",new Item(new FabricItemSettings().maxCount(64)));
+
+    public static final Item PETRI_DISH_ITEM = registerItems("petri_dish_item",new BlockItem(ModBlocks.PETRI_DISH,new Item.Settings().maxCount(64)));
 
     public static final Item FRIED_EGG = registerItems("fried_egg",new Item(new FabricItemSettings().food(ModFoodComponents.FRIED_EGG).maxCount(64)));
     public static final Item PURPLE_EGG = registerItems("purple_egg",new PURPLE_EGG(new FabricItemSettings().food(ModFoodComponents.PURPLE_EGG).maxCount(64)));

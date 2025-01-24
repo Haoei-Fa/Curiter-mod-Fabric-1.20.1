@@ -39,7 +39,7 @@ public class PetriDishBlockEntity extends BlockEntity implements ExtendedScreenH
     private int maxNourishment = 64;
 
     private int progress = 0;
-    private int maxProgress = 120;
+    private int maxProgress = 600;
 
     public PetriDishBlockEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.PETRI_DISH_BLOCK_ENTITY, pos, state);
@@ -89,7 +89,7 @@ public class PetriDishBlockEntity extends BlockEntity implements ExtendedScreenH
 
     @Override
     public Text getDisplayName() {
-        return Text.translatable("mill_gui_name");
+        return Text.translatable("petri_dish_gui_name");
     }
 
     @Nullable
