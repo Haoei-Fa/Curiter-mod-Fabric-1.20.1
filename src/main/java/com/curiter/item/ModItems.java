@@ -31,6 +31,7 @@ public class ModItems {
     public static final Item DOUGH = registerItems("dough",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item FERMENTED_DOUGH = registerItems("fermented_dough",new Item(new FabricItemSettings().maxCount(64)));
     public static final Item YEAST = registerItems("yeast",new Item(new FabricItemSettings().maxCount(64)));
+    public static final Item ALCOHOL = registerItems("alcohol",new Item(new FabricItemSettings().maxCount(64)));
 
     public static final Item PETRI_DISH_ITEM = registerItems("petri_dish_item",new BlockItem(ModBlocks.PETRI_DISH,new Item.Settings().maxCount(64)));
 

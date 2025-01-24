@@ -21,33 +21,45 @@ public class PetriDishScreenHandler extends ScreenHandler {
 
     public PetriDishScreenHandler(int syncId, PlayerInventory inventory, PacketByteBuf buf){
         this(syncId,inventory,inventory.player.getWorld().getBlockEntity(buf.readBlockPos()),
-                new ArrayPropertyDelegate(6));
+                new ArrayPropertyDelegate(10));
     }
 
     public PetriDishScreenHandler(int syncId, PlayerInventory playerInventory, BlockEntity blockEntity, PropertyDelegate arrayPropertyDelegate) {
         super(ModScreenHandlers.PETRI_DISH_SCREEN_HANDLER,syncId);
-        checkSize((Inventory) blockEntity,3);
+        checkSize((Inventory) blockEntity,5);
         this.inventory = (Inventory) blockEntity;
         inventory.onOpen(playerInventory.player);
         this.propertyDelegate = arrayPropertyDelegate;
         this.blockEntity = (PetriDishBlockEntity) blockEntity;
 
-        this.addSlot(new Slot(inventory,0,83,34){
+        this.addSlot(new Slot(inventory,0,80,34){
             @Override
             public boolean canInsert(ItemStack stack) {
                 return stack.getItem() == ModItems.YEAST;
             }
         });
-        this.addSlot(new Slot(inventory,1,25,12){
+        this.addSlot(new Slot(inventory,1,25,18){
             @Override
             public boolean canInsert(ItemStack stack) {
                 return stack.getItem() == Items.SUGAR;
             }
         });
-        this.addSlot(new Slot(inventory,2,25,54){
+        this.addSlot(new Slot(inventory,2,25,51){
             @Override
             public boolean canInsert(ItemStack stack) {
-                return stack.getItem() == Items.POTION;
+                return stack.getItem() == Items.POTION||stack.getItem() == Items.WATER_BUCKET;
+            }
+        });
+        this.addSlot(new Slot(inventory,3,134,51){
+            @Override
+            public boolean canInsert(ItemStack stack) {
+                return stack.getItem() == Items.GLASS_BOTTLE;
+            }
+        });
+        this.addSlot(new Slot(inventory,4,134,18){
+            @Override
+            public boolean canInsert(ItemStack stack) {
+                return false;
             }
         });
 
@@ -100,23 +112,25 @@ public class PetriDishScreenHandler extends ScreenHandler {
             this.addSlot(new Slot(playerInventory, i, 8 + i * 18, 142));
         }
     }
-    public boolean isCrafting(){
-        return propertyDelegate.get(0) > 0;
-    }
-    public boolean haveFood(){
-        return propertyDelegate.get(4) >= 0;
-    }
-    public boolean haveWater(){
-        return propertyDelegate.get(2) >= 0;
-    }
 
-    public int getScaledProgress() {
-        int progress = this.propertyDelegate.get(0);
-        int maxProgress = this.propertyDelegate.get(1);
-        int progressSize = 32;
-
+    public int getScaledProgress1() {
+        int progress = Math.min(this.propertyDelegate.get(0), this.propertyDelegate.get(1) / 2);
+        int maxProgress = this.propertyDelegate.get(1)/2;
+        int progressSize = 22;
         return maxProgress != 0 && progress != 0 ? progress * progressSize / maxProgress : 0;
     }
+    public int getScaledProgress2() {
+        int progress;
+        if (this.propertyDelegate.get(0) <= this.propertyDelegate.get(1)/2){
+            progress = 0;
+        }
+        else progress = (propertyDelegate.get(0)-this.propertyDelegate.get(1)/2)*2;
+
+        int maxProgress = this.propertyDelegate.get(1);
+        int progressSize = 21;
+        return maxProgress != 0 && progress != 0 ? progress * progressSize / maxProgress : 0;
+    }
+
     public int getScaledProgressFood() {
         int nourishment = this.propertyDelegate.get(4);
         int maxNourishment = this.propertyDelegate.get(5);
@@ -130,5 +144,20 @@ public class PetriDishScreenHandler extends ScreenHandler {
         int progressSize = 32;
 
         return maxMoisture != 0 && moisture != 0 ? moisture * progressSize / maxMoisture : 0;
+    }
+
+    public int getScaledProgressByProducts() {
+        int ByProducts = this.propertyDelegate.get(6);
+        int maxByProducts = this.propertyDelegate.get(7);
+        int progressSize = 32;
+
+        return maxByProducts != 0 && ByProducts != 0 ? ByProducts * progressSize / maxByProducts : 0;
+    }
+
+    public int getScaledProgressGrowthRate() {
+        int GrowthRate = this.propertyDelegate.get(8);
+        int progressSize = 32;
+
+        return GrowthRate != 0 ? GrowthRate * progressSize / 4096 : 0;
     }
 }

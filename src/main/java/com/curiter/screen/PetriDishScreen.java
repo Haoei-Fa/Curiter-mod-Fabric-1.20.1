@@ -38,15 +38,19 @@ public class PetriDishScreen extends HandledScreen<PetriDishScreenHandler> {
     }
 
     private void renderProgress(DrawContext context, int x, int y) {
-        if (handler.isCrafting()){
-            context.drawTexture(TEXTURE,x + 75, y + 54, 176,0,handler.getScaledProgress(),4);
+        context.drawTexture(TEXTURE,x + 77, y + 31, 176,0,handler.getScaledProgress1(),handler.getScaledProgress1());
+        context.drawTexture(TEXTURE,x + 99, y + 53, 220,22,handler.getScaledProgress2()-21,handler.getScaledProgress2()-21);
+        context.drawTexture(TEXTURE,x + 54, y + 35, 176,22,4,32-handler.getScaledProgressFood());
+        context.drawTexture(TEXTURE,x + 46, y + 35, 176,22,4,32-handler.getScaledProgressWater());
+        context.drawTexture(TEXTURE,x + 124, y + 35, 176,22,4,32-handler.getScaledProgressByProducts());
+        context.drawTexture(TEXTURE,x + 103 - handler.getScaledProgressGrowthRate(), y + 18, 211 - handler.getScaledProgressGrowthRate(),22,1,4);
+        if (handler.getScaledProgressGrowthRate() <= 8){
+            context.drawTexture(TEXTURE,x + 106, y + 16, 185,26,5,8);
         }
-        if (handler.haveFood()){
-            context.drawTexture(TEXTURE,x + 54, y + 30, 180,4,4,32-handler.getScaledProgressFood());
+        else if (handler.getScaledProgressGrowthRate() >= 24) {
+            context.drawTexture(TEXTURE,x + 65, y + 16, 180,26,5,8);
         }
-        if (handler.haveWater()){
-            context.drawTexture(TEXTURE,x + 46, y + 30, 176,4,4,32-handler.getScaledProgressWater());
-        }
+
     }
 
     @Override

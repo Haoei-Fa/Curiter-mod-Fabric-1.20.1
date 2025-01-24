@@ -52,8 +52,9 @@ public class ModItemGroups {
                 entries.add(ModItems.FERMENTED_DOUGH);
                 entries.add(ModItems.YEAST);
                 entries.add(ModItems.FLOUR);
-                entries.add(ModItems.PETRI_DISH_ITEM);
                 entries.add(ModBlocks.MILL);
+                entries.add(ModItems.PETRI_DISH_ITEM);
+                entries.add(ModItems.ALCOHOL);
             }).build());
 
     public static final ItemGroup CURITER_MUSIC_DISC = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_music_disc"),
@@ -90,6 +91,7 @@ public class ModItemGroups {
                         entries.add(ModItems.FERMENTED_DOUGH);
                         entries.add(ModItems.YEAST);
                         entries.add(ModItems.FLOUR);
+                        entries.add(ModItems.ALCOHOL);
                     }).build());
 
     public static void registerModItemGroups(){
