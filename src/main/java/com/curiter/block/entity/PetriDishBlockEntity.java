@@ -13,6 +13,8 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.potion.PotionUtil;
+import net.minecraft.potion.Potions;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.server.network.ServerPlayerEntity;
@@ -219,7 +221,7 @@ public class PetriDishBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private boolean hsaWater(){
-        return getStack(WATER).getItem() == Items.POTION||getStack(WATER).getItem() == Items.WATER_BUCKET;
+        return (getStack(WATER).getItem() == Items.POTION && PotionUtil.getPotion(getStack(WATER)) == Potions.WATER)||getStack(WATER).getItem() == Items.WATER_BUCKET;
     }
 
     private boolean hsaFood(){

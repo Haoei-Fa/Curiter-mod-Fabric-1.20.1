@@ -9,6 +9,8 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.PacketByteBuf;
+import net.minecraft.potion.PotionUtil;
+import net.minecraft.potion.Potions;
 import net.minecraft.screen.ArrayPropertyDelegate;
 import net.minecraft.screen.PropertyDelegate;
 import net.minecraft.screen.ScreenHandler;
@@ -47,7 +49,7 @@ public class PetriDishScreenHandler extends ScreenHandler {
         this.addSlot(new Slot(inventory,2,25,51){
             @Override
             public boolean canInsert(ItemStack stack) {
-                return stack.getItem() == Items.POTION||stack.getItem() == Items.WATER_BUCKET;
+                return (stack.getItem() == Items.POTION && PotionUtil.getPotion(stack) == Potions.WATER)||stack.getItem() == Items.WATER_BUCKET;
             }
         });
         this.addSlot(new Slot(inventory,3,134,51){
