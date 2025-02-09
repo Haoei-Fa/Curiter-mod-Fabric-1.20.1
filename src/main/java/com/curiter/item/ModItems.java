@@ -15,8 +15,6 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
-import static net.minecraft.item.Items.register;
-
 public class ModItems {
     public static final Item GARUINKA_STORAGE_BOTTLE = registerItems("garuinka_storage_bottle",new Item(new FabricItemSettings().maxCount(16)));
     public static final Item GARUINKA = registerItems("garuinka",new GARUINKA(new FabricItemSettings().recipeRemainder(GARUINKA_STORAGE_BOTTLE).maxCount(16)));

@@ -5,6 +5,7 @@ import com.curiter.block.entity.ModBlockEntities;
 import com.curiter.item.ModItemGroups;
 import com.curiter.item.ModItems;
 import com.curiter.painting.ModPaintings;
+import com.curiter.recipes.ModRecipes;
 import com.curiter.sounds.ModSounds;
 import com.curiter.util.ModLootTableModifiers;
 import com.curiter.util.ModTrades;
@@ -30,5 +31,6 @@ public class CuriterMod implements ModInitializer {
 		ModPaintings.resisterPaintings();
 		ModLootTableModifiers.modifierLootTables();
 		ModTrades.registerTrades();
+		ModRecipes.registerModRecipes();
 	}
 }
