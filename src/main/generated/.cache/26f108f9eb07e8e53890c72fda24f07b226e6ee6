@@ -1,3 +1,9 @@
-// 1.20.1	2025-02-08T21:54:27.125404	Curiter Mod/Block Loot Tables
-ffe5a74a72ad40b6b0048dec597aec38a6bb7c10 data\curiter\loot_tables\blocks\garuinka_extractors.json
+// 1.20.1	2025-02-10T01:51:37.1013151	Curiter Mod/Block Loot Tables
+7fdcfae225f550f41678971526be5b3a4172b5e4 data\curiter\loot_tables\blocks\end_garuinka_mineral.json
+f367c93fe655fbe29b4866275105d9fb8b7294b5 data\curiter\loot_tables\blocks\garuinka_mineral.json
 f338e234c21ea85b0645a8309b5b69dff6212c8b data\curiter\loot_tables\blocks\curiter_block.json
+ffe5a74a72ad40b6b0048dec597aec38a6bb7c10 data\curiter\loot_tables\blocks\garuinka_extractors.json
+0cd6e8ca79e4282a225d456152e1ecd96e8008b2 data\curiter\loot_tables\blocks\petri_dish.json
+68fc9e7b93a7240165ce8669803aeeb784b905f7 data\curiter\loot_tables\blocks\deepslate_garuinka_mineral.json
+761c829d409d7205dac4e0aa36100238ab8a18c8 data\curiter\loot_tables\blocks\mill.json
+fc4ed03dca034eb78bfa16e3391f26681063e1c4 data\curiter\loot_tables\blocks\nether_garuinka_mineral.json

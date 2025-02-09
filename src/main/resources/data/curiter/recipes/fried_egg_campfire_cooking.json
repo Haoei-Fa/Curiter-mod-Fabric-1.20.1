@@ -3,7 +3,7 @@
   "category": "food",
   "cookingtime": 600,
   "experience": 0.35,
-  "group": "gold_ingot",
+  "group": "fried_egg",
   "ingredient": {
     "item": "minecraft:egg"
   },

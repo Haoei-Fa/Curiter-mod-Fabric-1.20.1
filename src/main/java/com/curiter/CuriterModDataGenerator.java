@@ -19,6 +19,8 @@ public class CuriterModDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(ModWorldGenerator::new);
+		pack.addProvider(ModLangEnUsProvider::new);
+		pack.addProvider(ModLangZhCnProvider::new);
 	}
 	@Override
 	public void buildRegistry(RegistryBuilder registryBuilder) {
