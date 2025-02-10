@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_clock": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:clock"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "curiter:music_disc_the_sukatuo_time"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_clock",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "curiter:music_disc_the_sukatuo_time"
+    ]
+  },
+  "sends_telemetry_event": false
+}

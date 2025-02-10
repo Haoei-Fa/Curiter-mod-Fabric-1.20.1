@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "A": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "###",
+    " A ",
+    "A  "
+  ],
+  "result": {
+    "item": "curiter:resin_scythe"
+  },
+  "show_notification": true
+}

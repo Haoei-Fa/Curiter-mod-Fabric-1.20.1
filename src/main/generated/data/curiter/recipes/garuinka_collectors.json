@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "pattern": [
+    "###",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "item": "curiter:garuinka_collectors"
+  },
+  "show_notification": true
+}

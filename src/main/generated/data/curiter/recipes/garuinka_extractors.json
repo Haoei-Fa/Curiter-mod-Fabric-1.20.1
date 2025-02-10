@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "curiter:cogs"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "B": {
+      "item": "curiter:garuinka_storage_bottle"
+    },
+    "C": {
+      "item": "minecraft:glass"
+    },
+    "D": {
+      "item": "minecraft:redstone_block"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "#B#",
+    "ADA"
+  ],
+  "result": {
+    "item": "curiter:garuinka_extractors"
+  },
+  "show_notification": true
+}

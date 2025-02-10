@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_disc_empty": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "curiter:disc_empty"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "curiter:music_disc_the_curiter"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_disc_empty",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "curiter:music_disc_the_curiter"
+    ]
+  },
+  "sends_telemetry_event": false
+}

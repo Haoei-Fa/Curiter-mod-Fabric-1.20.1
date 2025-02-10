@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass_pane"
+    },
+    "A": {
+      "item": "curiter:resin"
+    }
+  },
+  "pattern": [
+    "###",
+    "# #",
+    "AAA"
+  ],
+  "result": {
+    "item": "curiter:petri_dish_item"
+  },
+  "show_notification": true
+}

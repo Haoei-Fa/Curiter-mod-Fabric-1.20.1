@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:glass"
+    },
+    "A": {
+      "item": "minecraft:glass_pane"
+    },
+    "B": {
+      "item": "curiter:resin"
+    }
+  },
+  "pattern": [
+    " # ",
+    "ABA"
+  ],
+  "result": {
+    "item": "curiter:garuinka_storage_bottle"
+  },
+  "show_notification": true
+}

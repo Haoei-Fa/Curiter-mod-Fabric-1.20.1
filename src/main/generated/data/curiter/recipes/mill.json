@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:redstone_block"
+    },
+    "A": {
+      "item": "minecraft:copper_block"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "curiter:cogs"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "ACA",
+    "A#A"
+  ],
+  "result": {
+    "item": "curiter:mill"
+  },
+  "show_notification": true
+}
