@@ -32,6 +32,7 @@ public class ModLangEnUsProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PETRI_DISH_ITEM, "Petri dish");
         translationBuilder.add(ModItems.RESIN_SCYTHE, "Resin scythe");
         translationBuilder.add(ModItems.COPPER_NUGGET, "Copper nugget");
+        translationBuilder.add(ModItems.MANTOU, "Mantou");
 
         //方块名称
         translationBuilder.add(ModBlocks.CURITER_BLOCK, "Curiter block");

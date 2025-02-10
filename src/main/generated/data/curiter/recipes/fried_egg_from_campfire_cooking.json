@@ -4,7 +4,7 @@
   "cookingtime": 600,
   "experience": 0.35,
   "ingredient": {
-    "item": "curiter:purple_egg"
+    "item": "minecraft:egg"
   },
   "result": "curiter:fried_egg"
 }

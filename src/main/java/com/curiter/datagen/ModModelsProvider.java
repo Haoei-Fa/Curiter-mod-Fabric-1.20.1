@@ -56,6 +56,7 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.FLOUR, Models.GENERATED);
         itemModelGenerator.register(ModItems.PETRI_DISH_ITEM, Models.GENERATED);
         itemModelGenerator.register(ModItems.ALCOHOL, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MANTOU, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.GARUINKA_COLLECTORS, Models.HANDHELD);
         itemModelGenerator.register(ModItems.RESIN_SCYTHE, Models.HANDHELD);

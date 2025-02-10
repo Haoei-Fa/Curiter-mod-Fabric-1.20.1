@@ -32,6 +32,7 @@ public class ModLangZhCnProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.PETRI_DISH_ITEM, "培养皿");
         translationBuilder.add(ModItems.RESIN_SCYTHE, "树脂镰刀");
         translationBuilder.add(ModItems.COPPER_NUGGET, "铜粒");
+        translationBuilder.add(ModItems.MANTOU, "馒头");
 
         //方块名称
         translationBuilder.add(ModBlocks.CURITER_BLOCK, "翆璃塔方块");

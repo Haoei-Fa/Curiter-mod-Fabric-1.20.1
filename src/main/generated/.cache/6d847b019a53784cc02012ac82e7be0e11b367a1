@@ -1,12 +1,12 @@
-// 1.20.1	2025-02-10T21:53:27.1030681	Curiter Mod/Model Definitions
+// 1.20.1	2025-02-11T00:43:55.1055346	Curiter Mod/Model Definitions
 bef3e642d6eb788212fba96987342b0fd70ff1a5 assets\curiter\models\item\ancient_castle_under_the_blood_moon_music_disc.json
 8c520d24f6f6221c2fb294aeafd5bbbef9e37701 assets\curiter\models\item\fried_egg.json
 8654f9471085240e81bdd9da3cf4cbf45e37aa53 assets\curiter\models\item\cogs.json
 aa84d4f329db3101b599e76018b71a5935bdb65c assets\curiter\models\block\nether_garuinka_mineral.json
 c51224cbb1f018391999dae38d3a9fec2624a757 assets\curiter\models\item\flour.json
 1c959c94a9c3ced43d8913d9b44d65562d2b9ad7 assets\curiter\models\item\gravitational_equilibrium_music_disc.json
-1b721efc95ee9b01088828cc93351bba38fd473b assets\curiter\models\block\curiter_block.json
 0110bfa1e56cfc1bbab853f6bab7aaa42f956341 assets\curiter\models\item\garuinka_extractors.json
+1b721efc95ee9b01088828cc93351bba38fd473b assets\curiter\models\block\curiter_block.json
 446498eca562d2eedb835e4331e2eb71db2c305d assets\curiter\models\item\alcohol.json
 62cb4a0848674b34b253e7dbee368938fa1eafff assets\curiter\blockstates\nether_garuinka_mineral.json
 b750050c297b601f6162a05ae701db20954d55ce assets\curiter\blockstates\garuinka_extractors.json
@@ -16,6 +16,7 @@ c09fa373c4ac99626cb35f1eb71e96ab096da123 assets\curiter\models\item\copper_nugge
 f131f5d6798b59619b81dbc4daa75275b13bfcfa assets\curiter\models\block\garuinka_mineral.json
 2e581193595d8663ed71ded67a28556afd58fbbf assets\curiter\models\item\sleeping_atlantis_music_disc.json
 f88986a4371e17e9020c0e0fdfe34b873ae58a53 assets\curiter\models\item\garuinka_detectors.json
+22984a3f9eaaccd3b4c00a37a95c1647ce6d69cb assets\curiter\models\item\mantou.json
 8e3eaa53ff51e1e4457e1d0760c69543a7adc1a4 assets\curiter\models\item\garuinka_collectors.json
 78b433ae9b1bb5636f93b5451422337ca176f0c6 assets\curiter\models\item\evanescent_star_music_disc.json
 b897f0f88303302ab37194555ff4595373153a03 assets\curiter\blockstates\garuinka_mineral.json

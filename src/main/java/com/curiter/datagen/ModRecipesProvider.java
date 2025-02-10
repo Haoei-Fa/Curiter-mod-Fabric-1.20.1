@@ -25,18 +25,23 @@ public class ModRecipesProvider extends FabricRecipeProvider {
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         //食物烧制配方
         offerFoodCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING,
-                200, ModItems.FRIED_EGG, Items.EGG, 0.35f);
+                200, Items.EGG, ModItems.FRIED_EGG, 0.35f);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
-                100, ModItems.FRIED_EGG, Items.EGG, 0.35f);
+                100, Items.EGG, ModItems.FRIED_EGG, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING,
-                600, ModItems.FRIED_EGG, Items.EGG, 0.35f);
+                600, Items.EGG, ModItems.FRIED_EGG, 0.35f);
 
         offerFoodCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING,
-                200, ModItems.PURPLE_EGG, ModItems.FRIED_EGG, 0.35f);
+                200, ModItems.FRIED_EGG, ModItems.PURPLE_EGG, 0.35f);
         offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
-                100, ModItems.PURPLE_EGG, ModItems.FRIED_EGG, 0.35f);
+                100, ModItems.FRIED_EGG, ModItems.PURPLE_EGG, 0.35f);
         offerFoodCookingRecipe(exporter, "campfire_cooking", RecipeSerializer.CAMPFIRE_COOKING,
-                600, ModItems.PURPLE_EGG, ModItems.FRIED_EGG, 0.35f);
+                600, ModItems.FRIED_EGG, ModItems.PURPLE_EGG, 0.35f);
+
+        offerFoodCookingRecipe(exporter, "smelting", RecipeSerializer.SMELTING,
+                200, ModItems.FERMENTED_DOUGH, ModItems.MANTOU, 0.35f);
+        offerFoodCookingRecipe(exporter, "smoking", RecipeSerializer.SMOKING,
+                100, ModItems.FERMENTED_DOUGH, ModItems.MANTOU, 0.35f);
 
         //9合1配方
         offerReversibleCompactingRecipes(exporter, RecipeCategory.MISC, ModItems.COPPER_NUGGET,

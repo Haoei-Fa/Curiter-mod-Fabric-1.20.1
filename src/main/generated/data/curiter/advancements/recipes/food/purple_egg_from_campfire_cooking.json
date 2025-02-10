@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:egg_from_smoking"
+        "recipe": "minecraft:purple_egg_from_campfire_cooking"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:egg_from_smoking"
+      "minecraft:purple_egg_from_campfire_cooking"
     ]
   },
   "sends_telemetry_event": false

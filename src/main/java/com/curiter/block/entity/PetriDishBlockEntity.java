@@ -177,23 +177,7 @@ public class PetriDishBlockEntity extends BlockEntity implements ExtendedScreenH
     }
 
     private void getGrowthRate() {
-        int environment;
-        if (moisture <= 32){
-            if (nourishment <= 32){
-                environment = moisture + nourishment - ByProducts;
-            }
-            else {
-                environment = moisture + 32 - ByProducts;
-            }
-        }
-        else {
-            if (nourishment <= 32){
-                environment = 32 + nourishment - ByProducts;
-            }
-            else {
-                environment = 64 - ByProducts;
-            }
-        }
+        int environment = Math.max(getEnvironment(), 0);
 
         if (this.getStack(CELLS).getCount() == 0){
             GrowthFactor = 0;
@@ -214,6 +198,29 @@ public class PetriDishBlockEntity extends BlockEntity implements ExtendedScreenH
         else GrowthRate = Math.min(GrowthFactor, 4096);
     }
 
+    private int getEnvironment() {
+        int environment;
+        if (moisture == 0 || nourishment == 0){
+            environment = 0;
+        }
+        else if (moisture <= 32){
+            if (nourishment <= 32){
+                environment = moisture + nourishment - ByProducts;
+            }
+            else {
+                environment = moisture + 32 - ByProducts;
+            }
+        }
+        else {
+            if (nourishment <= 32){
+                environment = 32 + nourishment - ByProducts;
+            }
+            else {
+                environment = 64 - ByProducts;
+            }
+        }
+        return environment;
+    }
 
 
     private void resetProgress() {

@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_purple_egg": {
+    "has_egg": {
       "conditions": {
         "items": [
           {
             "items": [
-              "curiter:purple_egg"
+              "minecraft:egg"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_purple_egg",
+      "has_egg",
       "has_the_recipe"
     ]
   ],

@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 0.35,
   "ingredient": {
-    "item": "minecraft:egg"
+    "item": "curiter:fermented_dough"
   },
-  "result": "curiter:fried_egg"
+  "result": "curiter:mantou"
 }

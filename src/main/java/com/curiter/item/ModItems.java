@@ -34,7 +34,10 @@ public class ModItems {
     public static final Item PETRI_DISH_ITEM = registerItems("petri_dish_item",new BlockItem(ModBlocks.PETRI_DISH,new Item.Settings().maxCount(64)));
 
     public static final Item FRIED_EGG = registerItems("fried_egg",new Item(new FabricItemSettings().food(ModFoodComponents.FRIED_EGG).maxCount(64)));
+    public static final Item MANTOU = registerItems("mantou",new Item(new FabricItemSettings().food(ModFoodComponents.MANTOU).maxCount(64)));
+
     public static final Item PURPLE_EGG = registerItems("purple_egg",new PURPLE_EGG(new FabricItemSettings().food(ModFoodComponents.PURPLE_EGG).maxCount(64)));
+
     public static final Item FRENCH_STICK = registerItems("french_stick",new FRENCH_STICK(new FabricItemSettings().maxDamage(100)));
 
     public static final Item RESIN_SCYTHE = registerItems("resin_scythe",new RESIN_SCYTHE(ModToolMaterial.IRONS,3,1F,new FabricItemSettings()));
@@ -114,5 +117,6 @@ public class ModItems {
         fabricItemGroupEntries.add(FRIED_EGG);
         fabricItemGroupEntries.add(PURPLE_EGG);
         fabricItemGroupEntries.add(FRENCH_STICK);
+        fabricItemGroupEntries.add(MANTOU);
     }
 }

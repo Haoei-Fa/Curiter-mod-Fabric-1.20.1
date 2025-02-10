@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_fried_egg": {
+    "has_fermented_dough": {
       "conditions": {
         "items": [
           {
             "items": [
-              "curiter:fried_egg"
+              "curiter:fermented_dough"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:egg_from_smelting"
+        "recipe": "minecraft:mantou_from_smelting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_fried_egg",
+      "has_fermented_dough",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:egg_from_smelting"
+      "minecraft:mantou_from_smelting"
     ]
   },
   "sends_telemetry_event": false
