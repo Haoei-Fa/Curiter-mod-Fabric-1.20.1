@@ -11,6 +11,7 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
+    //模组物品
     public static final ItemGroup CURITER_GROUP = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_group"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.curiter_group"))
             .icon(() -> new ItemStack(ModBlocks.CURITER_BLOCK)).
@@ -58,6 +59,7 @@ public class ModItemGroups {
                 entries.add(ModItems.MANTOU);
             }).build());
 
+    //模组音乐唱片
     public static final ItemGroup CURITER_MUSIC_DISC = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_music_disc"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.curiter_music_disc"))
                     .icon(() -> new ItemStack(ModItems.DISC_EMPTY)).
@@ -81,6 +83,7 @@ public class ModItemGroups {
                         entries.add(ModItems.NEW_THE_CLOCK_TOWER_TRAVEL_MUSIC_DISC);
                     }).build());
 
+    //模组食物
     public static final ItemGroup CURITER_FOOD = Registry.register(Registries.ITEM_GROUP,new Identifier(CuriterMod.MOD_ID,"curiter_food"),
             FabricItemGroup.builder().displayName(Text.translatable("itemGroup.curiter_food"))
                     .icon(() -> new ItemStack(ModItems.FRIED_EGG)).
